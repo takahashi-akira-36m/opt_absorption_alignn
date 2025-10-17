@@ -1,0 +1,1146 @@
+Using device: cuda
+Device count: 4
+Current device: 0
+Device name: NVIDIA A100 80GB PCIe
+id_prop_csv_file exists True
+len dataset 2681
+multioutput True
+lists_length_equal True 1501
+Using rest of the dataset except the test and val sets.
+Data error Boolean value of Tensor with more than one value is ambiguous
+data range 6.400967295662746 2.0
+Converting to graphs!
+df                                          jid  ...                                              atoms
+0                   POSCAR_K2S3_mp-7667.vasp  ...  {'lattice_mat': [[3.59733385, -5.04474057, 0.0...
+1              POSCAR_Sn(PS3)2_mp-36381.vasp  ...  {'lattice_mat': [[2.99786339, 1.73081752, 6.58...
+2              POSCAR_Cs4SiO4_mp-771255.vasp  ...  {'lattice_mat': [[11.36784114, 0.0, -0.0687148...
+3          POSCAR_Ba3CaNb2O9_mp-1214569.vasp  ...  {'lattice_mat': [[5.93073129, 0.0, 0.0], [-2.9...
+4          POSCAR_K2Zn(SiO3)2_mp-555318.vasp  ...  {'lattice_mat': [[3.16710799, -4.74205676, 0.0...
+...                                      ...  ...                                                ...
+2139            POSCAR_Rb2GeSe3_mp-9794.vasp  ...  {'lattice_mat': [[6.96056111, -3.54510911, 0.0...
+2140           POSCAR_Ga2BiS4_mp-556712.vasp  ...  {'lattice_mat': [[7.44474039, 0.0, 0.0], [0.0,...
+2141          POSCAR_K5CuCO5_mp-1224071.vasp  ...  {'lattice_mat': [[8.87155796, 0.0, 0.0], [0.0,...
+2142        POSCAR_NaHf2(PO4)3_mp-40161.vasp  ...  {'lattice_mat': [[4.4255757, 2.55510723, 7.540...
+2143  POSCAR_CsKNa2Li12(SiO4)4_mp-17718.vasp  ...  {'lattice_mat': [[-5.5080777, 5.5080777, 3.184...
+
+[2144 rows x 3 columns]
+warning: could not load CGCNN features for 103
+Setting it to max atomic number available here, 103
+warning: could not load CGCNN features for 101
+Setting it to max atomic number available here, 103
+warning: could not load CGCNN features for 102
+Setting it to max atomic number available here, 103
+building line graphs
+data range 6.336119492402429 2.0
+Converting to graphs!
+df                                     jid  ...                                              atoms
+0        POSCAR_Cd(PO3)2_mp-866339.vasp  ...  {'lattice_mat': [[6.25977283, -4.3295574, -0.0...
+1         POSCAR_Li2CdGeO4_mp-7688.vasp  ...  {'lattice_mat': [[6.64873556, 0.0, 0.0], [0.0,...
+2    POSCAR_CaO_mp-1079707_mp-2605.vasp  ...  {'lattice_mat': [[0.0, 2.3831077, 2.3831077], ...
+3            POSCAR_KSbS2_mp-11703.vasp  ...  {'lattice_mat': [[4.38188163, -4.54415714, 0.0...
+4     POSCAR_Cs2Ti(GeO3)3_mp-16805.vasp  ...  {'lattice_mat': [[7.22885475, 3.46e-06, 0.0], ...
+..                                  ...  ...                                                ...
+263   POSCAR_SrTi(PO4)2_mp-1191111.vasp  ...  {'lattice_mat': [[8.2659175, -2.60283614, -0.0...
+264         POSCAR_Mg2GeO4_mp-3904.vasp  ...  {'lattice_mat': [[0.0, 4.145224, 4.145224], [4...
+265  POSCAR_LaAg(MoO4)2_mp-1223057.vasp  ...  {'lattice_mat': [[-2.67054122, 2.67054117, 5.7...
+266       POSCAR_P4Pb3O13_mp-18022.vasp  ...  {'lattice_mat': [[7.32590308, -0.01342544, 0.0...
+267          POSCAR_RbAuO_mp-10547.vasp  ...  {'lattice_mat': [[-4.93126791, 4.93126791, 2.9...
+
+[268 rows x 3 columns]
+building line graphs
+data range 6.358784606601741 2.0
+Converting to graphs!
+df                                      jid  ...                                              atoms
+0              POSCAR_Sb2O3_mp-2136.vasp  ...  {'lattice_mat': [[4.89926022, 0.0, 0.0], [0.0,...
+1    POSCAR_Sr4Li2Si4N8O_mp-1020592.vasp  ...  {'lattice_mat': [[9.30355095, 0.0, 0.0], [0.0,...
+2      POSCAR_K3Nb2AsSe11_mp-542545.vasp  ...  {'lattice_mat': [[7.45883606, -6.48625221, 0.0...
+3     POSCAR_GeO2_mp-1072104_mp-470.vasp  ...  {'lattice_mat': [[4.450395, 0.0, 0.0], [0.0, 4...
+4             POSCAR_CaSiO3_mp-4429.vasp  ...  {'lattice_mat': [[7.06930555, 0.00231766, 0.00...
+..                                   ...  ...                                                ...
+263            POSCAR_InPO4_mp-7566.vasp  ...  {'lattice_mat': [[2.6718851, -4.03583217, 0.0]...
+264    POSCAR_Na2Ga2GeS6_mp-1190388.vasp  ...  {'lattice_mat': [[0.0, 11.21455207, 3.62456487...
+265      POSCAR_Li2TiTeO6_mp-756117.vasp  ...  {'lattice_mat': [[4.92217489, 0.0, 0.0], [0.0,...
+266       POSCAR_Ba3SrTa2O9_mp-7980.vasp  ...  {'lattice_mat': [[5.96502836, -0.0, 0.0], [-2....
+267         POSCAR_Rb3VS4_mp-505721.vasp  ...  {'lattice_mat': [[9.34387729, 0.0, 0.0], [0.0,...
+
+[268 rows x 3 columns]
+building line graphs
+n_train: 2144
+n_val  : 268
+n_test : 268
+version='112bbedebdaecf59fb18e11c929080fb2f358246' dataset='user_data' target='target' atom_features='cgcnn' neighbor_strategy='k-nearest' id_tag='jid' random_seed=123 classification_threshold=None n_val=None n_test=None n_train=None train_ratio=0.8 val_ratio=0.05 test_ratio=0.15 target_multiplication_factor=None epochs=500 batch_size=4 weight_decay=1e-05 learning_rate=0.001 filename='sample' warmup_steps=2000 criterion='mse' optimizer='adamw' scheduler='onecycle' pin_memory=False save_dataloader=False write_checkpoint=True write_predictions=True store_outputs=True progress=True log_tensorboard=False standard_scalar_and_pca=False use_canonize=True num_workers=0 cutoff=10.0 cutoff_extra=3.0 max_neighbors=20 keep_data_order=True normalize_graph_level_loss=False distributed=False data_parallel=False n_early_stopping=None output_dir='.//250825/075453' model=ALIGNNAtomWiseConfig(name='alignn_atomwise', alignn_layers=4, gcn_layers=4, atom_input_features=92, edge_input_features=80, triplet_input_features=40, embedding_features=64, hidden_features=256, output_features=1501, grad_multiplier=-1, calculate_gradient=True, atomwise_output_features=0, graphwise_weight=1.0, gradwise_weight=0.0, stresswise_weight=0.0, atomwise_weight=0.0, link='identity', zero_inflated=False, classification=False, force_mult_natoms=False, energy_mult_natoms=False, include_pos_deriv=False, use_cutoff_function=False, inner_cutoff=10.0, stress_multiplier=1.0, add_reverse_forces=False, lg_on_fly=False, batch_stress=True, extra_features=0)
+config:
+{'atom_features': 'cgcnn',
+ 'batch_size': 4,
+ 'classification_threshold': None,
+ 'criterion': 'mse',
+ 'cutoff': 10.0,
+ 'cutoff_extra': 3.0,
+ 'data_parallel': False,
+ 'dataset': 'user_data',
+ 'distributed': False,
+ 'epochs': 500,
+ 'filename': 'sample',
+ 'id_tag': 'jid',
+ 'keep_data_order': True,
+ 'learning_rate': 0.001,
+ 'log_tensorboard': False,
+ 'max_neighbors': 20,
+ 'model': {'add_reverse_forces': False,
+           'alignn_layers': 4,
+           'atom_input_features': 92,
+           'atomwise_output_features': 0,
+           'atomwise_weight': 0.0,
+           'batch_stress': True,
+           'calculate_gradient': True,
+           'classification': False,
+           'edge_input_features': 80,
+           'embedding_features': 64,
+           'energy_mult_natoms': False,
+           'extra_features': 0,
+           'force_mult_natoms': False,
+           'gcn_layers': 4,
+           'grad_multiplier': -1,
+           'gradwise_weight': 0.0,
+           'graphwise_weight': 1.0,
+           'hidden_features': 256,
+           'include_pos_deriv': False,
+           'inner_cutoff': 10.0,
+           'lg_on_fly': False,
+           'link': 'identity',
+           'name': 'alignn_atomwise',
+           'output_features': 1501,
+           'stress_multiplier': 1.0,
+           'stresswise_weight': 0.0,
+           'triplet_input_features': 40,
+           'use_cutoff_function': False,
+           'zero_inflated': False},
+ 'n_early_stopping': None,
+ 'n_test': None,
+ 'n_train': None,
+ 'n_val': None,
+ 'neighbor_strategy': 'k-nearest',
+ 'normalize_graph_level_loss': False,
+ 'num_workers': 0,
+ 'optimizer': 'adamw',
+ 'output_dir': './/250825/075453',
+ 'pin_memory': False,
+ 'progress': True,
+ 'random_seed': 123,
+ 'save_dataloader': False,
+ 'scheduler': 'onecycle',
+ 'standard_scalar_and_pca': False,
+ 'store_outputs': True,
+ 'target': 'target',
+ 'target_multiplication_factor': None,
+ 'test_ratio': 0.15,
+ 'train_ratio': 0.8,
+ 'use_canonize': True,
+ 'val_ratio': 0.05,
+ 'version': '112bbedebdaecf59fb18e11c929080fb2f358246',
+ 'warmup_steps': 2000,
+ 'weight_decay': 1e-05,
+ 'write_checkpoint': True,
+ 'write_predictions': True}
+TrainLoss Epoch 0 total 241.58877524733543 out 0.4507253161747886 atom nan grad nan stress nan time 42.49484944343567
+ValLoss Epoch 0 total 25.054202646017075 out 0.37394331532225356 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 1 total 157.84247708320618 out 0.29448222533185175 atom nan grad nan stress nan time 43.03594970703125
+ValLoss Epoch 1 total 19.022902190685272 out 0.28392390503621345 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 2 total 136.8192227333784 out 0.25525973735775714 atom nan grad nan stress nan time 43.16560101509094
+ValLoss Epoch 2 total 15.451641663908958 out 0.23062151092409355 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 3 total 122.8180775642395 out 0.22913819808784336 atom nan grad nan stress nan time 42.77238416671753
+ValLoss Epoch 3 total 16.318332314491272 out 0.2435571910816581 atom nan grad nan stress nan 
+TrainLoss Epoch 4 total 113.44176419824362 out 0.21164507706136532 atom nan grad nan stress nan time 43.10147953033447
+ValLoss Epoch 4 total 13.785115391016006 out 0.20574798723603394 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 5 total 107.07501603662968 out 0.19976681582006992 atom nan grad nan stress nan time 42.70254611968994
+ValLoss Epoch 5 total 14.014731377363205 out 0.20917508893361525 atom nan grad nan stress nan 
+TrainLoss Epoch 6 total 99.73816380649805 out 0.18607865898361914 atom nan grad nan stress nan time 43.11211681365967
+ValLoss Epoch 6 total 12.22782215476036 out 0.18250480481012568 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 7 total 95.85303566604853 out 0.17883028595566797 atom nan grad nan stress nan time 43.46058487892151
+ValLoss Epoch 7 total 12.766384914517403 out 0.1905430543872192 atom nan grad nan stress nan 
+TrainLoss Epoch 8 total 90.88297256827354 out 0.16955778025909266 atom nan grad nan stress nan time 43.894519567489624
+ValLoss Epoch 8 total 12.049431674182415 out 0.17984225920763786 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 9 total 86.98672992736101 out 0.1622886715577844 atom nan grad nan stress nan time 43.00239324569702
+ValLoss Epoch 9 total 12.101886376738548 out 0.18062516523823818 atom nan grad nan stress nan 
+TrainLoss Epoch 10 total 83.88241382688284 out 0.15649703661501077 atom nan grad nan stress nan time 42.87999391555786
+ValLoss Epoch 10 total 12.054490268230438 out 0.17991776016645483 atom nan grad nan stress nan 
+TrainLoss Epoch 11 total 80.63087763637304 out 0.15043073830476195 atom nan grad nan stress nan time 42.906946420669556
+ValLoss Epoch 11 total 11.093074597418308 out 0.1655682738764551 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 12 total 76.94608458131552 out 0.14355612413616123 atom nan grad nan stress nan time 43.50436234474182
+ValLoss Epoch 12 total 11.708447344601154 out 0.17475294008563155 atom nan grad nan stress nan 
+TrainLoss Epoch 13 total 74.54156157374382 out 0.13907007402213808 atom nan grad nan stress nan time 43.66503095626831
+ValLoss Epoch 13 total 11.142476558685303 out 0.16630561554539902 atom nan grad nan stress nan 
+TrainLoss Epoch 14 total 72.98977261036634 out 0.1361749453436828 atom nan grad nan stress nan time 43.60492992401123
+ValLoss Epoch 14 total 10.690044470131397 out 0.15955289670509665 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 15 total 69.27512174844742 out 0.12924462653470875 atom nan grad nan stress nan time 43.491535663604736
+ValLoss Epoch 15 total 10.748703315854073 out 0.16042840328721236 atom nan grad nan stress nan 
+TrainLoss Epoch 16 total 67.4595055282116 out 0.12585728310148372 atom nan grad nan stress nan time 43.56917095184326
+ValLoss Epoch 16 total 10.205158822238445 out 0.15231579878746368 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 17 total 65.43945500999689 out 0.12208853217306946 atom nan grad nan stress nan time 43.498605251312256
+ValLoss Epoch 17 total 10.522518835961819 out 0.15705251479173282 atom nan grad nan stress nan 
+TrainLoss Epoch 18 total 63.38243493437767 out 0.11825080807520388 atom nan grad nan stress nan time 43.772698640823364
+ValLoss Epoch 18 total 10.649500280618668 out 0.15894776138529434 atom nan grad nan stress nan 
+TrainLoss Epoch 19 total 61.76372564584017 out 0.11523082855060308 atom nan grad nan stress nan time 44.08525824546814
+ValLoss Epoch 19 total 9.696340069174767 out 0.1447214894350475 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 20 total 60.37940751761198 out 0.11264814544867588 atom nan grad nan stress nan time 43.892247676849365
+ValLoss Epoch 20 total 10.213999681174755 out 0.1524477537278326 atom nan grad nan stress nan 
+TrainLoss Epoch 21 total 57.484286569058895 out 0.10724680072412364 atom nan grad nan stress nan time 43.754833698272705
+ValLoss Epoch 21 total 10.05044737458229 out 0.15000667268548515 atom nan grad nan stress nan 
+TrainLoss Epoch 22 total 56.36973915249109 out 0.10516742145347238 atom nan grad nan stress nan time 43.55727553367615
+ValLoss Epoch 22 total 10.228593207895756 out 0.15266556738272072 atom nan grad nan stress nan 
+TrainLoss Epoch 23 total 55.44834192097187 out 0.10344839653696031 atom nan grad nan stress nan time 43.445048332214355
+ValLoss Epoch 23 total 9.62494596093893 out 0.14365590685576785 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 24 total 54.1452227383852 out 0.10101720361845819 atom nan grad nan stress nan time 43.62190365791321
+ValLoss Epoch 24 total 9.960772283375263 out 0.148668239045416 atom nan grad nan stress nan 
+TrainLoss Epoch 25 total 51.8626078851521 out 0.09675859412552734 atom nan grad nan stress nan time 43.77540898323059
+ValLoss Epoch 25 total 9.859193928539753 out 0.14715214314688535 atom nan grad nan stress nan 
+TrainLoss Epoch 26 total 52.442405339330435 out 0.09784030605991427 atom nan grad nan stress nan time 43.79342341423035
+ValLoss Epoch 26 total 9.52000067383051 out 0.14208955996220285 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 27 total 51.07094115763903 out 0.09528160429397095 atom nan grad nan stress nan time 43.666123151779175
+ValLoss Epoch 27 total 10.400307647883892 out 0.1552284692330953 atom nan grad nan stress nan 
+TrainLoss Epoch 28 total 50.03489537164569 out 0.09334868283424057 atom nan grad nan stress nan time 43.757458448410034
+ValLoss Epoch 28 total 9.678052328526974 out 0.1444485377047767 atom nan grad nan stress nan 
+TrainLoss Epoch 29 total 49.003023345023394 out 0.09142354876499399 atom nan grad nan stress nan time 44.09968161582947
+ValLoss Epoch 29 total 9.649836726486683 out 0.14402740920276444 atom nan grad nan stress nan 
+TrainLoss Epoch 30 total 48.27878684923053 out 0.09007236135716196 atom nan grad nan stress nan time 43.58083891868591
+ValLoss Epoch 30 total 9.714111477136612 out 0.14498673327576034 atom nan grad nan stress nan 
+TrainLoss Epoch 31 total 47.16178999096155 out 0.08798841175266786 atom nan grad nan stress nan time 43.349268674850464
+ValLoss Epoch 31 total 9.653294414281845 out 0.1440790169747 atom nan grad nan stress nan 
+TrainLoss Epoch 32 total 47.29225726798177 out 0.08823182101772804 atom nan grad nan stress nan time 43.33751583099365
+ValLoss Epoch 32 total 9.73052105307579 out 0.1452316524669111 atom nan grad nan stress nan 
+TrainLoss Epoch 33 total 44.21764614805579 out 0.08249560637272108 atom nan grad nan stress nan time 43.03209376335144
+ValLoss Epoch 33 total 9.555513121187687 out 0.14261959570728017 atom nan grad nan stress nan 
+TrainLoss Epoch 34 total 43.25743540003896 out 0.08070416837059874 atom nan grad nan stress nan time 42.819011926651
+ValLoss Epoch 34 total 9.616420418024063 out 0.14352865835871106 atom nan grad nan stress nan 
+TrainLoss Epoch 35 total 42.49511554837227 out 0.0792819301640179 atom nan grad nan stress nan time 44.18236255645752
+ValLoss Epoch 35 total 10.058603964745998 out 0.15012841258269777 atom nan grad nan stress nan 
+TrainLoss Epoch 36 total 41.76217325031757 out 0.07791450033368208 atom nan grad nan stress nan time 45.93574237823486
+ValLoss Epoch 36 total 9.166534706950188 out 0.13681394642930672 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 37 total 43.881262954324484 out 0.08186802592823847 atom nan grad nan stress nan time 46.03970432281494
+ValLoss Epoch 37 total 10.010745696723461 out 0.149414111469785 atom nan grad nan stress nan 
+TrainLoss Epoch 38 total 42.32808353379369 out 0.07897030289515763 atom nan grad nan stress nan time 45.71427083015442
+ValLoss Epoch 38 total 9.352646715939045 out 0.13959173877205774 atom nan grad nan stress nan 
+TrainLoss Epoch 39 total 40.10870740190148 out 0.07482967621809801 atom nan grad nan stress nan time 45.70556855201721
+ValLoss Epoch 39 total 9.580292992293835 out 0.14298944440692585 atom nan grad nan stress nan 
+TrainLoss Epoch 40 total 38.98370470479131 out 0.07273079053506 atom nan grad nan stress nan time 46.31802201271057
+ValLoss Epoch 40 total 9.351894348859787 out 0.13958050755378054 atom nan grad nan stress nan 
+TrainLoss Epoch 41 total 38.9057407900691 out 0.07258533548311048 atom nan grad nan stress nan time 45.637309074401855
+ValLoss Epoch 41 total 9.611160315573215 out 0.14345014956686478 atom nan grad nan stress nan 
+TrainLoss Epoch 42 total 39.01313190534711 out 0.07278569199592541 atom nan grad nan stress nan time 45.626747131347656
+ValLoss Epoch 42 total 9.022741787135601 out 0.13466778464118748 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 43 total 37.727146465331316 out 0.07038646551852368 atom nan grad nan stress nan time 45.873997926712036
+ValLoss Epoch 43 total 9.26171986758709 out 0.13823462079286264 atom nan grad nan stress nan 
+TrainLoss Epoch 44 total 37.66122883185744 out 0.07026348474169643 atom nan grad nan stress nan time 45.37564396858215
+ValLoss Epoch 44 total 9.343632034957409 out 0.1394571914723775 atom nan grad nan stress nan 
+TrainLoss Epoch 45 total 36.75423186272383 out 0.06857132637690838 atom nan grad nan stress nan time 45.751150369644165
+ValLoss Epoch 45 total 9.57696146517992 out 0.14293971958274385 atom nan grad nan stress nan 
+TrainLoss Epoch 46 total 37.09895829483867 out 0.06921447271436648 atom nan grad nan stress nan time 45.95898962020874
+ValLoss Epoch 46 total 9.346147902309895 out 0.13949474201067305 atom nan grad nan stress nan 
+TrainLoss Epoch 47 total 36.30968274921179 out 0.06774194385554379 atom nan grad nan stress nan time 45.826074838638306
+ValLoss Epoch 47 total 9.37110460549593 out 0.13986722848092883 atom nan grad nan stress nan 
+TrainLoss Epoch 48 total 35.47536462545395 out 0.06618537997106876 atom nan grad nan stress nan time 45.24444317817688
+ValLoss Epoch 48 total 9.518080927431583 out 0.1420609038763048 atom nan grad nan stress nan 
+TrainLoss Epoch 49 total 35.20460585877299 out 0.06568023320926641 atom nan grad nan stress nan time 45.19431495666504
+ValLoss Epoch 49 total 9.340915895998478 out 0.1394166521440512 atom nan grad nan stress nan 
+TrainLoss Epoch 50 total 35.29935237765312 out 0.0658569989255929 atom nan grad nan stress nan time 45.70080232620239
+ValLoss Epoch 50 total 9.13284806907177 out 0.1363111616454651 atom nan grad nan stress nan 
+TrainLoss Epoch 51 total 32.99676911905408 out 0.06156113483839261 atom nan grad nan stress nan time 45.07756304740906
+ValLoss Epoch 51 total 9.206354416906834 out 0.137408271429404 atom nan grad nan stress nan 
+TrainLoss Epoch 52 total 33.359490256756544 out 0.06223785372348283 atom nan grad nan stress nan time 45.00077247619629
+ValLoss Epoch 52 total 9.110273621976376 out 0.1359742291016313 atom nan grad nan stress nan 
+TrainLoss Epoch 53 total 33.25337724015117 out 0.062039881431427406 atom nan grad nan stress nan time 45.15248775482178
+ValLoss Epoch 53 total 8.918244443833828 out 0.13310812102754627 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 54 total 33.244759645313025 out 0.062023803689743646 atom nan grad nan stress nan time 44.960219383239746
+ValLoss Epoch 54 total 9.292737752199173 out 0.13869757352300663 atom nan grad nan stress nan 
+TrainLoss Epoch 55 total 32.98566531762481 out 0.06154041887734316 atom nan grad nan stress nan time 45.408753633499146
+ValLoss Epoch 55 total 9.167197108268738 out 0.13682383433502507 atom nan grad nan stress nan 
+TrainLoss Epoch 56 total 30.792587473988533 out 0.05744885590547495 atom nan grad nan stress nan time 44.93665528297424
+ValLoss Epoch 56 total 8.506417542696 out 0.1269614523118347 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 57 total 31.60268120840192 out 0.05896022441441375 atom nan grad nan stress nan time 44.92108225822449
+ValLoss Epoch 57 total 8.805744633078575 out 0.13142902173463217 atom nan grad nan stress nan 
+TrainLoss Epoch 58 total 30.622544948011637 out 0.057131612353629256 atom nan grad nan stress nan time 44.91089701652527
+ValLoss Epoch 58 total 9.3201814442873 out 0.13910718230560976 atom nan grad nan stress nan 
+TrainLoss Epoch 59 total 32.77292378619313 out 0.0611435129058125 atom nan grad nan stress nan time 45.241089820861816
+ValLoss Epoch 59 total 9.275155656039715 out 0.13843515470757473 atom nan grad nan stress nan 
+TrainLoss Epoch 60 total 30.825284261256456 out 0.05750985729381517 atom nan grad nan stress nan time 45.13937187194824
+ValLoss Epoch 60 total 9.166885055601597 out 0.13681917747937303 atom nan grad nan stress nan 
+TrainLoss Epoch 61 total 29.55124519020319 out 0.05513291874800834 atom nan grad nan stress nan time 45.21902799606323
+ValLoss Epoch 61 total 8.97952838242054 out 0.13402280826182505 atom nan grad nan stress nan 
+TrainLoss Epoch 62 total 29.858339179307222 out 0.055705855194499714 atom nan grad nan stress nan time 45.039533376693726
+ValLoss Epoch 62 total 8.906699307262897 out 0.1329358074361899 atom nan grad nan stress nan 
+TrainLoss Epoch 63 total 29.600533545017242 out 0.05522487461704724 atom nan grad nan stress nan time 45.236305952072144
+ValLoss Epoch 63 total 8.926578402519226 out 0.13323250957382266 atom nan grad nan stress nan 
+TrainLoss Epoch 64 total 28.69637531042099 out 0.05353801225496054 atom nan grad nan stress nan time 45.21377229690552
+ValLoss Epoch 64 total 8.902209177613258 out 0.13286879164369345 atom nan grad nan stress nan 
+TrainLoss Epoch 65 total 29.75911570340395 out 0.055520736829089604 atom nan grad nan stress nan time 45.47956728935242
+ValLoss Epoch 65 total 8.580920137465 out 0.1280734320760576 atom nan grad nan stress nan 
+TrainLoss Epoch 66 total 30.09735057875514 out 0.056151772045125885 atom nan grad nan stress nan time 45.046995639801025
+ValLoss Epoch 66 total 9.040076464414597 out 0.13492651110543355 atom nan grad nan stress nan 
+TrainLoss Epoch 67 total 28.278818756341934 out 0.05275898869863157 atom nan grad nan stress nan time 45.04073405265808
+ValLoss Epoch 67 total 8.960104487836361 out 0.13373289737608055 atom nan grad nan stress nan 
+TrainLoss Epoch 68 total 28.590889431536198 out 0.05334121024332894 atom nan grad nan stress nan time 44.95834565162659
+ValLoss Epoch 68 total 9.485392838716507 out 0.14157302294948898 atom nan grad nan stress nan 
+TrainLoss Epoch 69 total 27.62152417190373 out 0.05153269309832086 atom nan grad nan stress nan time 44.98206543922424
+ValLoss Epoch 69 total 8.609140612185001 out 0.12849463261163466 atom nan grad nan stress nan 
+TrainLoss Epoch 70 total 26.571691162884235 out 0.04957404948145493 atom nan grad nan stress nan time 45.04764771461487
+ValLoss Epoch 70 total 8.895716644823551 out 0.1327718870648241 atom nan grad nan stress nan 
+TrainLoss Epoch 71 total 27.47517756000161 out 0.051259658397651967 atom nan grad nan stress nan time 45.08412313461304
+ValLoss Epoch 71 total 8.669350787997246 out 0.12939329269852973 atom nan grad nan stress nan 
+TrainLoss Epoch 72 total 26.72069500759244 out 0.049852041767648174 atom nan grad nan stress nan time 44.89593482017517
+ValLoss Epoch 72 total 8.673251435160637 out 0.12945151106546235 atom nan grad nan stress nan 
+TrainLoss Epoch 73 total 26.95249728858471 out 0.05028450871248818 atom nan grad nan stress nan time 45.030332803726196
+ValLoss Epoch 73 total 9.182059690356255 out 0.13704566421372663 atom nan grad nan stress nan 
+TrainLoss Epoch 74 total 26.057606998831034 out 0.04861493726018821 atom nan grad nan stress nan time 45.10113263130188
+ValLoss Epoch 74 total 8.831115998327732 out 0.131807698942662 atom nan grad nan stress nan 
+TrainLoss Epoch 75 total 27.03821099177003 out 0.05044442221132788 atom nan grad nan stress nan time 45.41091728210449
+ValLoss Epoch 75 total 9.260229736566544 out 0.13821238096617583 atom nan grad nan stress nan 
+TrainLoss Epoch 76 total 26.21827144920826 out 0.04891468436354914 atom nan grad nan stress nan time 45.02162003517151
+ValLoss Epoch 76 total 8.984186135232449 out 0.13409232692843112 atom nan grad nan stress nan 
+TrainLoss Epoch 77 total 25.022414542734623 out 0.046683608172789874 atom nan grad nan stress nan time 45.11580991744995
+ValLoss Epoch 77 total 8.773038946092129 out 0.1309408768489193 atom nan grad nan stress nan 
+TrainLoss Epoch 78 total 25.107205929234624 out 0.04684180076846612 atom nan grad nan stress nan time 44.92024111747742
+ValLoss Epoch 78 total 8.651599638164043 out 0.12912834888639357 atom nan grad nan stress nan 
+TrainLoss Epoch 79 total 24.781772941350937 out 0.04623464993566578 atom nan grad nan stress nan time 45.08486008644104
+ValLoss Epoch 79 total 8.769178621470928 out 0.13088326082275892 atom nan grad nan stress nan 
+TrainLoss Epoch 80 total 24.771283451467752 out 0.046215079891703835 atom nan grad nan stress nan time 44.83154821395874
+ValLoss Epoch 80 total 8.672213017940521 out 0.12943601241907565 atom nan grad nan stress nan 
+TrainLoss Epoch 81 total 24.93608795851469 out 0.046522551126439486 atom nan grad nan stress nan time 44.80789232254028
+ValLoss Epoch 81 total 8.419967599213123 out 0.12567115387378927 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 82 total 23.940651135519147 out 0.044665392888859824 atom nan grad nan stress nan time 44.818546533584595
+ValLoss Epoch 82 total 8.82790157198906 out 0.1317597212984848 atom nan grad nan stress nan 
+TrainLoss Epoch 83 total 23.69880730472505 out 0.04421419170699976 atom nan grad nan stress nan time 45.0896897315979
+ValLoss Epoch 83 total 8.685256823897362 out 0.12963069505183572 atom nan grad nan stress nan 
+TrainLoss Epoch 84 total 25.018612587824464 out 0.04667651492742292 atom nan grad nan stress nan time 44.76577544212341
+ValLoss Epoch 84 total 9.250115349888802 out 0.13806142011841627 atom nan grad nan stress nan 
+TrainLoss Epoch 85 total 24.404269993305206 out 0.045530353441775334 atom nan grad nan stress nan time 45.13304591178894
+ValLoss Epoch 85 total 8.566509895026684 out 0.1278583527352778 atom nan grad nan stress nan 
+TrainLoss Epoch 86 total 23.94143308326602 out 0.044666851712274 atom nan grad nan stress nan time 44.900789737701416
+ValLoss Epoch 86 total 8.662095002830029 out 0.12928499605679686 atom nan grad nan stress nan 
+TrainLoss Epoch 87 total 23.013995936140418 out 0.042936558479365346 atom nan grad nan stress nan time 44.881131172180176
+ValLoss Epoch 87 total 8.756145521998405 out 0.13068873474324275 atom nan grad nan stress nan 
+TrainLoss Epoch 88 total 23.955382408574224 out 0.0446928765464403 atom nan grad nan stress nan time 45.116663694381714
+ValLoss Epoch 88 total 8.731611989438534 out 0.13032256353259086 atom nan grad nan stress nan 
+TrainLoss Epoch 89 total 23.065555239096284 out 0.04303275118999378 atom nan grad nan stress nan time 45.1120400428772
+ValLoss Epoch 89 total 8.89746492356062 out 0.13279797967536636 atom nan grad nan stress nan 
+TrainLoss Epoch 90 total 23.695515539497137 out 0.04420805030914305 atom nan grad nan stress nan time 45.15910744667053
+ValLoss Epoch 90 total 8.482422135770321 out 0.12660331289922577 atom nan grad nan stress nan 
+TrainLoss Epoch 91 total 23.114324517548084 out 0.04312373865132224 atom nan grad nan stress nan time 44.98983120918274
+ValLoss Epoch 91 total 8.595326863229275 out 0.12828845775238717 atom nan grad nan stress nan 
+TrainLoss Epoch 92 total 22.78825132921338 out 0.042515393209563546 atom nan grad nan stress nan time 45.29087424278259
+ValLoss Epoch 92 total 8.749081574380398 out 0.13058330403575097 atom nan grad nan stress nan 
+TrainLoss Epoch 93 total 22.716812880709767 out 0.04238211254429411 atom nan grad nan stress nan time 45.23775863647461
+ValLoss Epoch 93 total 8.868724647909403 out 0.1323690229086934 atom nan grad nan stress nan 
+TrainLoss Epoch 94 total 23.620398541912436 out 0.044067906722181485 atom nan grad nan stress nan time 45.32043814659119
+ValLoss Epoch 94 total 8.706589229404926 out 0.12994908876034392 atom nan grad nan stress nan 
+TrainLoss Epoch 95 total 22.256275579333305 out 0.04152290120740718 atom nan grad nan stress nan time 45.17180156707764
+ValLoss Epoch 95 total 8.529550395905972 out 0.1273067200078489 atom nan grad nan stress nan 
+TrainLoss Epoch 96 total 22.00332336872816 out 0.04105097533903114 atom nan grad nan stress nan time 45.01787257194519
+ValLoss Epoch 96 total 8.668846193701029 out 0.12938576085032136 atom nan grad nan stress nan 
+TrainLoss Epoch 97 total 21.817984575405717 out 0.04070519411393299 atom nan grad nan stress nan time 45.90384221076965
+ValLoss Epoch 97 total 8.5750733576715 out 0.12798616464579202 atom nan grad nan stress nan 
+TrainLoss Epoch 98 total 22.260678904131055 out 0.041531116226448825 atom nan grad nan stress nan time 45.57197093963623
+ValLoss Epoch 98 total 8.516173772513866 out 0.12710706712519995 atom nan grad nan stress nan 
+TrainLoss Epoch 99 total 21.172836303710938 out 0.039501559284740355 atom nan grad nan stress nan time 45.674384355545044
+ValLoss Epoch 99 total 8.861196875572205 out 0.13225666755734608 atom nan grad nan stress nan 
+TrainLoss Epoch 100 total 21.611192222684622 out 0.040319387381230996 atom nan grad nan stress nan time 45.700722217559814
+ValLoss Epoch 100 total 8.66937643289566 out 0.12939367656252962 atom nan grad nan stress nan 
+TrainLoss Epoch 101 total 21.633157055824995 out 0.04036036661167739 atom nan grad nan stress nan time 45.89926815032959
+ValLoss Epoch 101 total 8.741837970912457 out 0.13047518845275036 atom nan grad nan stress nan 
+TrainLoss Epoch 102 total 21.428030721843243 out 0.039977668320031925 atom nan grad nan stress nan time 45.680225133895874
+ValLoss Epoch 102 total 8.63738913834095 out 0.12891625303673612 atom nan grad nan stress nan 
+TrainLoss Epoch 103 total 20.63135658763349 out 0.038491335928073224 atom nan grad nan stress nan time 43.97603106498718
+ValLoss Epoch 103 total 8.661476712673903 out 0.1292757702932672 atom nan grad nan stress nan 
+TrainLoss Epoch 104 total 20.837604738771915 out 0.03887612727359317 atom nan grad nan stress nan time 43.313724756240845
+ValLoss Epoch 104 total 8.941879194229841 out 0.13346088041403803 atom nan grad nan stress nan 
+TrainLoss Epoch 105 total 20.93455354683101 out 0.039057002040201606 atom nan grad nan stress nan time 42.44567513465881
+ValLoss Epoch 105 total 8.530954219400883 out 0.12732767149152144 atom nan grad nan stress nan 
+TrainLoss Epoch 106 total 20.872534967958927 out 0.038941295758170236 atom nan grad nan stress nan time 43.66283822059631
+ValLoss Epoch 106 total 8.6465345621109 out 0.12905275146172016 atom nan grad nan stress nan 
+TrainLoss Epoch 107 total 20.698171317577362 out 0.03861599021789806 atom nan grad nan stress nan time 43.5548882484436
+ValLoss Epoch 107 total 8.774581052362919 out 0.1309638933715365 atom nan grad nan stress nan 
+TrainLoss Epoch 108 total 20.709568547084928 out 0.038637253783748965 atom nan grad nan stress nan time 43.74523878097534
+ValLoss Epoch 108 total 8.572924379259348 out 0.12795409179877 atom nan grad nan stress nan 
+TrainLoss Epoch 109 total 20.110219115391374 out 0.03751906452650247 atom nan grad nan stress nan time 43.12827968597412
+ValLoss Epoch 109 total 8.569240901619196 out 0.12789911544070362 atom nan grad nan stress nan 
+TrainLoss Epoch 110 total 20.15357661433518 out 0.0375999553159804 atom nan grad nan stress nan time 43.495001792907715
+ValLoss Epoch 110 total 8.873535506427288 out 0.13244082517991937 atom nan grad nan stress nan 
+TrainLoss Epoch 111 total 20.52662269026041 out 0.03829593703112076 atom nan grad nan stress nan time 43.58799386024475
+ValLoss Epoch 111 total 8.648595798760653 out 0.1290835162740346 atom nan grad nan stress nan 
+TrainLoss Epoch 112 total 20.103759171441197 out 0.03750701242496666 atom nan grad nan stress nan time 43.76036047935486
+ValLoss Epoch 112 total 8.576646711677313 out 0.12800964839042375 atom nan grad nan stress nan 
+TrainLoss Epoch 113 total 19.52807911299169 out 0.03643298254255073 atom nan grad nan stress nan time 44.292635679244995
+ValLoss Epoch 113 total 8.37842283770442 out 0.12505108337854823 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 114 total 19.701676977798343 out 0.03675685913192737 atom nan grad nan stress nan time 43.4341938495636
+ValLoss Epoch 114 total 8.356368534266949 out 0.1247219164957396 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 115 total 19.577030876651406 out 0.03652431040951747 atom nan grad nan stress nan time 43.391650915145874
+ValLoss Epoch 115 total 8.586295679211617 out 0.12815366426045932 atom nan grad nan stress nan 
+TrainLoss Epoch 116 total 19.644180862233043 out 0.036649590227061886 atom nan grad nan stress nan time 43.669899702072144
+ValLoss Epoch 116 total 8.62608566135168 out 0.12874754364964872 atom nan grad nan stress nan 
+TrainLoss Epoch 117 total 20.12244680337608 out 0.037541877520293664 atom nan grad nan stress nan time 43.450687646865845
+ValLoss Epoch 117 total 8.879832535982132 out 0.13253481140621962 atom nan grad nan stress nan 
+TrainLoss Epoch 118 total 18.721399269998074 out 0.03492798284625951 atom nan grad nan stress nan time 42.71399283409119
+ValLoss Epoch 118 total 8.477138832211494 out 0.12652445708562535 atom nan grad nan stress nan 
+TrainLoss Epoch 119 total 19.153786327689886 out 0.035734675010069473 atom nan grad nan stress nan time 43.38751220703125
+ValLoss Epoch 119 total 8.766731925308704 out 0.13084674314369285 atom nan grad nan stress nan 
+TrainLoss Epoch 120 total 19.261007130146027 out 0.035934714004405545 atom nan grad nan stress nan time 42.93064999580383
+ValLoss Epoch 120 total 8.498757317662239 out 0.12684712198905837 atom nan grad nan stress nan 
+TrainLoss Epoch 121 total 19.17273804359138 out 0.03577003281735066 atom nan grad nan stress nan time 42.74688386917114
+ValLoss Epoch 121 total 8.782691277563572 out 0.13108494206894789 atom nan grad nan stress nan 
+TrainLoss Epoch 122 total 18.797269569709897 out 0.03506953201036204 atom nan grad nan stress nan time 43.28207230567932
+ValLoss Epoch 122 total 8.694493062794209 out 0.12976855032365792 atom nan grad nan stress nan 
+TrainLoss Epoch 123 total 19.162999242544174 out 0.035751863273952536 atom nan grad nan stress nan time 43.61684465408325
+ValLoss Epoch 123 total 8.462722014635801 out 0.12630928020652396 atom nan grad nan stress nan 
+TrainLoss Epoch 124 total 18.876373279839754 out 0.0352171135506359 atom nan grad nan stress nan time 43.85307598114014
+ValLoss Epoch 124 total 8.425994135439396 out 0.12576110410783004 atom nan grad nan stress nan 
+TrainLoss Epoch 125 total 18.876228330656886 out 0.03521684296962204 atom nan grad nan stress nan time 43.970726013183594
+ValLoss Epoch 125 total 8.68261118978262 out 0.1295912083677803 atom nan grad nan stress nan 
+TrainLoss Epoch 126 total 18.38706624507904 out 0.03430422724775167 atom nan grad nan stress nan time 42.98294639587402
+ValLoss Epoch 126 total 8.324167530983686 out 0.1242413021454358 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 127 total 18.21495526097715 out 0.033983124686551736 atom nan grad nan stress nan time 43.70261883735657
+ValLoss Epoch 127 total 8.573907315731049 out 0.12796876154604325 atom nan grad nan stress nan 
+TrainLoss Epoch 128 total 17.98729324527085 out 0.03355838204359478 atom nan grad nan stress nan time 43.62490653991699
+ValLoss Epoch 128 total 8.385378021746874 out 0.12515489290780174 atom nan grad nan stress nan 
+TrainLoss Epoch 129 total 17.500416055321693 out 0.03265002912910627 atom nan grad nan stress nan time 43.2273428440094
+ValLoss Epoch 129 total 8.491403177380562 out 0.1267373596178609 atom nan grad nan stress nan 
+TrainLoss Epoch 130 total 18.21298765204847 out 0.033979453813007064 atom nan grad nan stress nan time 43.432514667510986
+ValLoss Epoch 130 total 8.449732568114996 out 0.12611540825904632 atom nan grad nan stress nan 
+TrainLoss Epoch 131 total 17.569257905706763 out 0.03277846546357367 atom nan grad nan stress nan time 43.5745792388916
+ValLoss Epoch 131 total 8.757061395794153 out 0.13070240512663484 atom nan grad nan stress nan 
+TrainLoss Epoch 132 total 18.084668427705765 out 0.033740052194743006 atom nan grad nan stress nan time 44.14386034011841
+ValLoss Epoch 132 total 8.303646553307772 out 0.12393501920673851 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 133 total 17.628650864586234 out 0.032889273259942294 atom nan grad nan stress nan time 43.3603401184082
+ValLoss Epoch 133 total 8.478631727397442 out 0.12654673933202873 atom nan grad nan stress nan 
+TrainLoss Epoch 134 total 17.784067081287503 out 0.03317922890058586 atom nan grad nan stress nan time 43.44002890586853
+ValLoss Epoch 134 total 8.518813766539097 out 0.1271464698419596 atom nan grad nan stress nan 
+TrainLoss Epoch 135 total 17.92643518000841 out 0.033444840917087514 atom nan grad nan stress nan time 43.256444454193115
+ValLoss Epoch 135 total 8.331537876278162 out 0.12435130767788506 atom nan grad nan stress nan 
+TrainLoss Epoch 136 total 18.02130233310163 out 0.0336218318611753 atom nan grad nan stress nan time 43.84411931037903
+ValLoss Epoch 136 total 8.406050242483616 out 0.12546343433575677 atom nan grad nan stress nan 
+TrainLoss Epoch 137 total 18.20618155412376 out 0.03396675579265195 atom nan grad nan stress nan time 43.80471181869507
+ValLoss Epoch 137 total 8.574754223227501 out 0.12798140344126446 atom nan grad nan stress nan 
+TrainLoss Epoch 138 total 17.650489455088973 out 0.03293001680916655 atom nan grad nan stress nan time 43.43665337562561
+ValLoss Epoch 138 total 8.452359654009342 out 0.12615461972495037 atom nan grad nan stress nan 
+TrainLoss Epoch 139 total 17.19758127257228 out 0.032085038875326384 atom nan grad nan stress nan time 43.81413149833679
+ValLoss Epoch 139 total 8.429719660431147 out 0.12581670779549228 atom nan grad nan stress nan 
+TrainLoss Epoch 140 total 17.841972962021828 out 0.03328726215132592 atom nan grad nan stress nan time 43.74850106239319
+ValLoss Epoch 140 total 8.382599879056215 out 0.125113427139966 atom nan grad nan stress nan 
+TrainLoss Epoch 141 total 16.932615716010332 out 0.03159070010556625 atom nan grad nan stress nan time 43.57079792022705
+ValLoss Epoch 141 total 8.363188102841377 out 0.12482369932127002 atom nan grad nan stress nan 
+TrainLoss Epoch 142 total 16.96728898398578 out 0.03165538901036806 atom nan grad nan stress nan time 43.847039222717285
+ValLoss Epoch 142 total 8.547610014677048 out 0.12757626636782635 atom nan grad nan stress nan 
+TrainLoss Epoch 143 total 17.206660356372595 out 0.03210197744626247 atom nan grad nan stress nan time 43.541500091552734
+ValLoss Epoch 143 total 8.359335001558065 out 0.12476619173796312 atom nan grad nan stress nan 
+TrainLoss Epoch 144 total 16.74761626124382 out 0.03124555190177504 atom nan grad nan stress nan time 43.84343385696411
+ValLoss Epoch 144 total 8.360753756016493 out 0.12478736776662279 atom nan grad nan stress nan 
+TrainLoss Epoch 145 total 16.33170254342258 out 0.03046959350568746 atom nan grad nan stress nan time 43.739219665527344
+ValLoss Epoch 145 total 8.619265913963318 out 0.1286457561341946 atom nan grad nan stress nan 
+TrainLoss Epoch 146 total 16.855600211769342 out 0.03144701452824323 atom nan grad nan stress nan time 43.49323225021362
+ValLoss Epoch 146 total 8.595951449126005 out 0.12829778160514 atom nan grad nan stress nan 
+TrainLoss Epoch 147 total 16.883287854492664 out 0.031498670654533496 atom nan grad nan stress nan time 43.54983305931091
+ValLoss Epoch 147 total 8.612832553684711 out 0.12854973678212298 atom nan grad nan stress nan 
+TrainLoss Epoch 148 total 16.817426182329655 out 0.031375794225692734 atom nan grad nan stress nan time 43.2795193195343
+ValLoss Epoch 148 total 8.284594725817442 out 0.12365066435615937 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 149 total 16.063742568716407 out 0.02996966822674125 atom nan grad nan stress nan time 43.385948181152344
+ValLoss Epoch 149 total 8.269762739539146 out 0.12342929111113844 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 150 total 16.295812653377652 out 0.030402634817071655 atom nan grad nan stress nan time 43.523430824279785
+ValLoss Epoch 150 total 8.534897975623608 out 0.12738653398358346 atom nan grad nan stress nan 
+TrainLoss Epoch 151 total 16.03843733854592 out 0.029922456942755835 atom nan grad nan stress nan time 43.48004412651062
+ValLoss Epoch 151 total 8.39589811488986 out 0.1253119091102398 atom nan grad nan stress nan 
+TrainLoss Epoch 152 total 16.25413914397359 out 0.030324885761188882 atom nan grad nan stress nan time 43.592917680740356
+ValLoss Epoch 152 total 8.362232200801373 out 0.12480943241639242 atom nan grad nan stress nan 
+TrainLoss Epoch 153 total 16.354489639401436 out 0.030512106828918674 atom nan grad nan stress nan time 43.59272122383118
+ValLoss Epoch 153 total 8.392333306372166 out 0.12525870288749658 atom nan grad nan stress nan 
+TrainLoss Epoch 154 total 16.33075681515038 out 0.030467829224619505 atom nan grad nan stress nan time 43.74633574485779
+ValLoss Epoch 154 total 8.268575381487608 out 0.12341156928920279 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 155 total 16.309187598526478 out 0.03042758806942957 atom nan grad nan stress nan time 43.9066686630249
+ValLoss Epoch 155 total 8.352475076913834 out 0.12466380381004047 atom nan grad nan stress nan 
+TrainLoss Epoch 156 total 16.098274948075414 out 0.030034094262965848 atom nan grad nan stress nan time 43.53360033035278
+ValLoss Epoch 156 total 8.65835140645504 out 0.12922912116287416 atom nan grad nan stress nan 
+TrainLoss Epoch 157 total 15.953124640509486 out 0.029763291451588413 atom nan grad nan stress nan time 43.51663088798523
+ValLoss Epoch 157 total 8.333804816007614 out 0.12438514282344067 atom nan grad nan stress nan 
+TrainLoss Epoch 158 total 15.561789326369762 out 0.029033188411570585 atom nan grad nan stress nan time 43.883167028427124
+ValLoss Epoch 158 total 8.31524746492505 out 0.12410816865385924 atom nan grad nan stress nan 
+TrainLoss Epoch 159 total 15.88591323979199 out 0.02963789714935024 atom nan grad nan stress nan time 43.488314390182495
+ValLoss Epoch 159 total 8.389145527034998 out 0.12521112326984563 atom nan grad nan stress nan 
+TrainLoss Epoch 160 total 15.656404599547386 out 0.029209709306161565 atom nan grad nan stress nan time 43.7363007068634
+ValLoss Epoch 160 total 8.417905554175377 out 0.12564037787541713 atom nan grad nan stress nan 
+TrainLoss Epoch 161 total 15.976715778931975 out 0.029807304711929897 atom nan grad nan stress nan time 43.63341522216797
+ValLoss Epoch 161 total 8.314249571412802 out 0.12409327483426587 atom nan grad nan stress nan 
+TrainLoss Epoch 162 total 15.830061310902238 out 0.02953369555499068 atom nan grad nan stress nan time 43.65816259384155
+ValLoss Epoch 162 total 8.175601609051228 out 0.12202390124943456 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 163 total 15.727080894634128 out 0.029341567982150183 atom nan grad nan stress nan time 43.7441623210907
+ValLoss Epoch 163 total 8.510604232549667 out 0.12702394127359762 atom nan grad nan stress nan 
+TrainLoss Epoch 164 total 15.746364139020443 out 0.02937754441387876 atom nan grad nan stress nan time 43.65629720687866
+ValLoss Epoch 164 total 8.579239517450333 out 0.12804834699245968 atom nan grad nan stress nan 
+TrainLoss Epoch 165 total 15.80809610337019 out 0.029492715946855184 atom nan grad nan stress nan time 44.15740656852722
+ValLoss Epoch 165 total 8.332007966935635 out 0.12435832433208062 atom nan grad nan stress nan 
+TrainLoss Epoch 166 total 15.807899706065655 out 0.029492349538122395 atom nan grad nan stress nan time 43.666250467300415
+ValLoss Epoch 166 total 8.427634175866842 out 0.12578558216251012 atom nan grad nan stress nan 
+TrainLoss Epoch 167 total 15.350724026560783 out 0.02863940965801607 atom nan grad nan stress nan time 43.6559317111969
+ValLoss Epoch 167 total 8.300713494420052 out 0.12389124319660699 atom nan grad nan stress nan 
+TrainLoss Epoch 168 total 15.340980641543865 out 0.02862123180849523 atom nan grad nan stress nan time 43.757386445999146
+ValLoss Epoch 168 total 8.348798919469118 out 0.12460893420359835 atom nan grad nan stress nan 
+TrainLoss Epoch 169 total 15.5820585899055 out 0.029071004122546915 atom nan grad nan stress nan time 43.742210149765015
+ValLoss Epoch 169 total 8.195295989513397 out 0.12231784866411564 atom nan grad nan stress nan 
+TrainLoss Epoch 170 total 15.644765887409449 out 0.029187995294863715 atom nan grad nan stress nan time 43.659932136535645
+ValLoss Epoch 170 total 8.436009485274553 out 0.12591058567139804 atom nan grad nan stress nan 
+TrainLoss Epoch 171 total 15.143490163609385 out 0.028252779571925783 atom nan grad nan stress nan time 43.738059520721436
+ValLoss Epoch 171 total 8.456501618027687 out 0.126216438677508 atom nan grad nan stress nan 
+TrainLoss Epoch 172 total 14.7985485419631 out 0.027609231621154418 atom nan grad nan stress nan time 43.72743558883667
+ValLoss Epoch 172 total 8.42693492770195 out 0.1257751446834396 atom nan grad nan stress nan 
+TrainLoss Epoch 173 total 14.726258415728807 out 0.0274743620369856 atom nan grad nan stress nan time 43.69873332977295
+ValLoss Epoch 173 total 8.359571199864149 out 0.12476971496207331 atom nan grad nan stress nan 
+TrainLoss Epoch 174 total 14.540351210162044 out 0.02712752023814576 atom nan grad nan stress nan time 43.75341272354126
+ValLoss Epoch 174 total 8.310864739120007 out 0.12404275449845001 atom nan grad nan stress nan 
+TrainLoss Epoch 175 total 14.861375281587243 out 0.027726445634041808 atom nan grad nan stress nan time 43.653924226760864
+ValLoss Epoch 175 total 8.326989743858576 out 0.12428342578575087 atom nan grad nan stress nan 
+TrainLoss Epoch 176 total 15.11626410111785 out 0.028201984565007582 atom nan grad nan stress nan time 43.96931290626526
+ValLoss Epoch 176 total 8.509926978498697 out 0.12701383203910227 atom nan grad nan stress nan 
+TrainLoss Epoch 177 total 14.917236171662807 out 0.027830663795676773 atom nan grad nan stress nan time 43.77272582054138
+ValLoss Epoch 177 total 8.2818669565022 out 0.12360995240924466 atom nan grad nan stress nan 
+TrainLoss Epoch 178 total 14.437246598303318 out 0.026935160925777864 atom nan grad nan stress nan time 43.641828536987305
+ValLoss Epoch 178 total 8.232415691018105 out 0.12287187359963586 atom nan grad nan stress nan 
+TrainLoss Epoch 179 total 14.513779623433948 out 0.0270779462741631 atom nan grad nan stress nan time 43.65885138511658
+ValLoss Epoch 179 total 8.269629530608654 out 0.12342730372086502 atom nan grad nan stress nan 
+TrainLoss Epoch 180 total 14.13093612715602 out 0.026363686158742967 atom nan grad nan stress nan time 43.544705390930176
+ValLoss Epoch 180 total 8.33137759193778 out 0.12434891542623139 atom nan grad nan stress nan 
+TrainLoss Epoch 181 total 14.638794094324112 out 0.027311182384885186 atom nan grad nan stress nan time 43.528610944747925
+ValLoss Epoch 181 total 8.2246418222785 out 0.12275584464968514 atom nan grad nan stress nan 
+TrainLoss Epoch 182 total 14.624411221593618 out 0.02728434865938561 atom nan grad nan stress nan time 43.480013608932495
+ValLoss Epoch 182 total 8.333839546889067 out 0.12438566229516408 atom nan grad nan stress nan 
+TrainLoss Epoch 183 total 14.572045862674713 out 0.027186652035724554 atom nan grad nan stress nan time 43.46925640106201
+ValLoss Epoch 183 total 8.29434084519744 out 0.12379612858018277 atom nan grad nan stress nan 
+TrainLoss Epoch 184 total 14.140681782737374 out 0.02638186834164986 atom nan grad nan stress nan time 43.56730651855469
+ValLoss Epoch 184 total 8.274822808802128 out 0.12350481382834454 atom nan grad nan stress nan 
+TrainLoss Epoch 185 total 13.878083039075136 out 0.025891945333170956 atom nan grad nan stress nan time 43.50497841835022
+ValLoss Epoch 185 total 8.412442229688168 out 0.12555883628542527 atom nan grad nan stress nan 
+TrainLoss Epoch 186 total 14.389764230698347 out 0.026846574313160492 atom nan grad nan stress nan time 44.04697322845459
+ValLoss Epoch 186 total 8.37404354289174 out 0.12498572147551495 atom nan grad nan stress nan 
+TrainLoss Epoch 187 total 14.348377849906683 out 0.0267693610387545 atom nan grad nan stress nan time 43.52222180366516
+ValLoss Epoch 187 total 8.309420298784971 out 0.1240211963346553 atom nan grad nan stress nan 
+TrainLoss Epoch 188 total 13.818443285301328 out 0.02578067705814592 atom nan grad nan stress nan time 43.742788553237915
+ValLoss Epoch 188 total 8.26918937265873 out 0.1234207333766504 atom nan grad nan stress nan 
+TrainLoss Epoch 189 total 14.129725383594632 out 0.02636142722756379 atom nan grad nan stress nan time 43.65892028808594
+ValLoss Epoch 189 total 8.251294266432524 out 0.12315364345591524 atom nan grad nan stress nan 
+TrainLoss Epoch 190 total 14.221336014568806 out 0.026532342542891788 atom nan grad nan stress nan time 43.83046293258667
+ValLoss Epoch 190 total 8.267333801835775 out 0.12339304084010518 atom nan grad nan stress nan 
+TrainLoss Epoch 191 total 14.333360137417912 out 0.026741342945205415 atom nan grad nan stress nan time 43.72621774673462
+ValLoss Epoch 191 total 8.424458175897598 out 0.12573817831416595 atom nan grad nan stress nan 
+TrainLoss Epoch 192 total 14.222611475735903 out 0.02653472230494919 atom nan grad nan stress nan time 43.74206471443176
+ValLoss Epoch 192 total 8.257998812943697 out 0.12325371044948812 atom nan grad nan stress nan 
+TrainLoss Epoch 193 total 13.793600048869848 out 0.025734327912174455 atom nan grad nan stress nan time 43.68424606323242
+ValLoss Epoch 193 total 8.249766506254673 out 0.12313084175260558 atom nan grad nan stress nan 
+TrainLoss Epoch 194 total 13.730407036840916 out 0.02561643035324657 atom nan grad nan stress nan time 43.696338415145874
+ValLoss Epoch 194 total 8.236242175102234 out 0.12292898462479587 atom nan grad nan stress nan 
+TrainLoss Epoch 195 total 13.49846795015037 out 0.025183708158214153 atom nan grad nan stress nan time 43.5476508140564
+ValLoss Epoch 195 total 8.369922261685133 out 0.12492421016280655 atom nan grad nan stress nan 
+TrainLoss Epoch 196 total 13.917328152805567 out 0.02596516376883463 atom nan grad nan stress nan time 43.46393918991089
+ValLoss Epoch 196 total 8.228197075426579 out 0.12280890865032998 atom nan grad nan stress nan 
+TrainLoss Epoch 197 total 13.838915269821882 out 0.025818871028424766 atom nan grad nan stress nan time 43.59542393684387
+ValLoss Epoch 197 total 8.346260100603104 out 0.12457104258848477 atom nan grad nan stress nan 
+TrainLoss Epoch 198 total 13.958651036024094 out 0.026042258781766987 atom nan grad nan stress nan time 43.27456712722778
+ValLoss Epoch 198 total 8.566662859171629 out 0.12786063659415997 atom nan grad nan stress nan 
+TrainLoss Epoch 199 total 13.653085546568036 out 0.025472173876917057 atom nan grad nan stress nan time 43.743629455566406
+ValLoss Epoch 199 total 8.182004608213902 out 0.12211946779628029 atom nan grad nan stress nan 
+TrainLoss Epoch 200 total 13.979831092059612 out 0.02608177379565369 atom nan grad nan stress nan time 43.70951962471008
+ValLoss Epoch 200 total 8.328790187835693 out 0.1243102983315484 atom nan grad nan stress nan 
+TrainLoss Epoch 201 total 13.241812033578753 out 0.024704872543921064 atom nan grad nan stress nan time 43.63817644119263
+ValLoss Epoch 201 total 8.338101983070374 out 0.12444928016535478 atom nan grad nan stress nan 
+TrainLoss Epoch 202 total 13.122743658721447 out 0.02448273020201819 atom nan grad nan stress nan time 43.58852934837341
+ValLoss Epoch 202 total 8.747453950345516 out 0.13055901210726775 atom nan grad nan stress nan 
+TrainLoss Epoch 203 total 13.568568592891097 out 0.025314493003669922 atom nan grad nan stress nan time 43.71955490112305
+ValLoss Epoch 203 total 8.199043698608875 out 0.12237378188129619 atom nan grad nan stress nan 
+TrainLoss Epoch 204 total 13.49051333218813 out 0.025168867561816265 atom nan grad nan stress nan time 43.016979694366455
+ValLoss Epoch 204 total 8.274985942989588 out 0.12350724863958865 atom nan grad nan stress nan 
+TrainLoss Epoch 205 total 13.849521113559604 out 0.02583865811774847 atom nan grad nan stress nan time 43.0326452255249
+ValLoss Epoch 205 total 8.373979054391384 out 0.1249847580758153 atom nan grad nan stress nan 
+TrainLoss Epoch 206 total 13.361604269593954 out 0.024928365633257198 atom nan grad nan stress nan time 42.685157775878906
+ValLoss Epoch 206 total 8.299424942582846 out 0.12387201201048405 atom nan grad nan stress nan 
+TrainLoss Epoch 207 total 13.158441696316004 out 0.024549330843958665 atom nan grad nan stress nan time 43.69676637649536
+ValLoss Epoch 207 total 8.281305205076933 out 0.12360156654389365 atom nan grad nan stress nan 
+TrainLoss Epoch 208 total 13.452327635139227 out 0.025097625538289974 atom nan grad nan stress nan time 42.72698187828064
+ValLoss Epoch 208 total 8.265358693897724 out 0.12336355992714235 atom nan grad nan stress nan 
+TrainLoss Epoch 209 total 13.144513314589858 out 0.024523345106837586 atom nan grad nan stress nan time 43.77088165283203
+ValLoss Epoch 209 total 8.421580500900745 out 0.12569522770067038 atom nan grad nan stress nan 
+TrainLoss Epoch 210 total 13.072956686839461 out 0.02438984393229057 atom nan grad nan stress nan time 43.73812389373779
+ValLoss Epoch 210 total 8.376861780881882 out 0.12502778455399752 atom nan grad nan stress nan 
+TrainLoss Epoch 211 total 13.24499055184424 out 0.02471080266836192 atom nan grad nan stress nan time 43.855334758758545
+ValLoss Epoch 211 total 8.330497317016125 out 0.12433577729079671 atom nan grad nan stress nan 
+TrainLoss Epoch 212 total 13.168392213061452 out 0.02456789542600513 atom nan grad nan stress nan time 43.672990798950195
+ValLoss Epoch 212 total 8.265773057937622 out 0.123369743100466 atom nan grad nan stress nan 
+TrainLoss Epoch 213 total 13.51769402064383 out 0.025219577723189265 atom nan grad nan stress nan time 43.64387083053589
+ValLoss Epoch 213 total 8.292841669172049 out 0.12377375287372958 atom nan grad nan stress nan 
+TrainLoss Epoch 214 total 13.638690983876586 out 0.02544531839302838 atom nan grad nan stress nan time 43.5609405040741
+ValLoss Epoch 214 total 8.251178614795208 out 0.12315191664267298 atom nan grad nan stress nan 
+TrainLoss Epoch 215 total 12.899468373507261 out 0.024066171833335794 atom nan grad nan stress nan time 43.348783016204834
+ValLoss Epoch 215 total 8.300114963203669 out 0.12388230949358453 atom nan grad nan stress nan 
+TrainLoss Epoch 216 total 12.953584145754576 out 0.024167133975602054 atom nan grad nan stress nan time 43.55501055717468
+ValLoss Epoch 216 total 8.224612604826689 out 0.12275540933669511 atom nan grad nan stress nan 
+TrainLoss Epoch 217 total 13.001980692148209 out 0.024257426079622783 atom nan grad nan stress nan time 43.852121114730835
+ValLoss Epoch 217 total 8.25991889834404 out 0.1232823695287464 atom nan grad nan stress nan 
+TrainLoss Epoch 218 total 13.223637161776423 out 0.024670964211619052 atom nan grad nan stress nan time 44.09224486351013
+ValLoss Epoch 218 total 8.244069829583168 out 0.12304581564000498 atom nan grad nan stress nan 
+TrainLoss Epoch 219 total 13.302126545459032 out 0.024817399663611794 atom nan grad nan stress nan time 43.71086835861206
+ValLoss Epoch 219 total 8.129281431436539 out 0.12133255545394592 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 220 total 12.968364108353853 out 0.024194708645550626 atom nan grad nan stress nan time 43.74134039878845
+ValLoss Epoch 220 total 8.111296612769365 out 0.12106412470163515 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 221 total 12.483253153041005 out 0.023289650785392194 atom nan grad nan stress nan time 43.58358573913574
+ValLoss Epoch 221 total 8.358861606568098 out 0.12475912697663692 atom nan grad nan stress nan 
+TrainLoss Epoch 222 total 12.503136199899018 out 0.023326745957577118 atom nan grad nan stress nan time 43.597290992736816
+ValLoss Epoch 222 total 8.29981942474842 out 0.12387790005229846 atom nan grad nan stress nan 
+TrainLoss Epoch 223 total 12.615812860429287 out 0.023536963634492175 atom nan grad nan stress nan time 43.82378530502319
+ValLoss Epoch 223 total 8.166283253580332 out 0.1218848211927543 atom nan grad nan stress nan 
+TrainLoss Epoch 224 total 12.582403944805264 out 0.023474633578047226 atom nan grad nan stress nan time 43.77826285362244
+ValLoss Epoch 224 total 8.268673337996006 out 0.12341303268704096 atom nan grad nan stress nan 
+TrainLoss Epoch 225 total 12.4314218275249 out 0.023192950597188247 atom nan grad nan stress nan time 43.59477472305298
+ValLoss Epoch 225 total 8.284342840313911 out 0.12364690478727812 atom nan grad nan stress nan 
+TrainLoss Epoch 226 total 12.721901146695018 out 0.023734889509942413 atom nan grad nan stress nan time 43.70004343986511
+ValLoss Epoch 226 total 8.255251336842775 out 0.1232127024894438 atom nan grad nan stress nan 
+TrainLoss Epoch 227 total 12.699182393029332 out 0.023692503792433994 atom nan grad nan stress nan time 43.511526346206665
+ValLoss Epoch 227 total 8.2147153057158 out 0.12260768771929022 atom nan grad nan stress nan 
+TrainLoss Epoch 228 total 12.60567893832922 out 0.023518057073670832 atom nan grad nan stress nan time 43.957558155059814
+ValLoss Epoch 228 total 8.255201496183872 out 0.12321196005016684 atom nan grad nan stress nan 
+TrainLoss Epoch 229 total 12.534207632765174 out 0.02338471518020467 atom nan grad nan stress nan time 43.82207894325256
+ValLoss Epoch 229 total 8.240314148366451 out 0.12298975938804366 atom nan grad nan stress nan 
+TrainLoss Epoch 230 total 12.732253335416317 out 0.023754203328521347 atom nan grad nan stress nan time 43.34330177307129
+ValLoss Epoch 230 total 8.389772091060877 out 0.1252204744652743 atom nan grad nan stress nan 
+TrainLoss Epoch 231 total 13.101649805903435 out 0.024443375944815052 atom nan grad nan stress nan time 43.64162802696228
+ValLoss Epoch 231 total 8.31610530987382 out 0.12412097218668053 atom nan grad nan stress nan 
+TrainLoss Epoch 232 total 12.432554034516215 out 0.023195062947101136 atom nan grad nan stress nan time 43.81430459022522
+ValLoss Epoch 232 total 8.229826018214226 out 0.1228332218017106 atom nan grad nan stress nan 
+TrainLoss Epoch 233 total 12.49267509020865 out 0.02330722903627631 atom nan grad nan stress nan time 43.753703594207764
+ValLoss Epoch 233 total 8.25967250391841 out 0.12327869102803778 atom nan grad nan stress nan 
+TrainLoss Epoch 234 total 12.436973391100764 out 0.023203308077217485 atom nan grad nan stress nan time 43.591431856155396
+ValLoss Epoch 234 total 8.2942886762321 out 0.12379534950758186 atom nan grad nan stress nan 
+TrainLoss Epoch 235 total 12.626710532233119 out 0.023557295220405707 atom nan grad nan stress nan time 43.56976938247681
+ValLoss Epoch 235 total 8.265006877481937 out 0.12335830708520017 atom nan grad nan stress nan 
+TrainLoss Epoch 236 total 12.478107577189803 out 0.02328005081012328 atom nan grad nan stress nan time 43.7065064907074
+ValLoss Epoch 236 total 8.25088082626462 out 0.1231474716713478 atom nan grad nan stress nan 
+TrainLoss Epoch 237 total 12.676992448046803 out 0.023651104668536652 atom nan grad nan stress nan time 44.01938009262085
+ValLoss Epoch 237 total 8.451645031571388 out 0.1261439527069211 atom nan grad nan stress nan 
+TrainLoss Epoch 238 total 12.170262858271599 out 0.02270571377146106 atom nan grad nan stress nan time 43.651365995407104
+ValLoss Epoch 238 total 8.369244311004877 out 0.12491409046118152 atom nan grad nan stress nan 
+TrainLoss Epoch 239 total 12.195460269227624 out 0.022752723808239003 atom nan grad nan stress nan time 43.547420501708984
+ValLoss Epoch 239 total 8.251828599721193 out 0.12316161875024619 atom nan grad nan stress nan 
+TrainLoss Epoch 240 total 12.775334535166621 out 0.02383457872062112 atom nan grad nan stress nan time 43.72060966491699
+ValLoss Epoch 240 total 8.236168175935745 out 0.12292788114318667 atom nan grad nan stress nan 
+TrainLoss Epoch 241 total 12.242071079090238 out 0.022839684330251984 atom nan grad nan stress nan time 43.76735305786133
+ValLoss Epoch 241 total 8.24924260750413 out 0.12312301977960224 atom nan grad nan stress nan 
+TrainLoss Epoch 242 total 12.017318178899586 out 0.02242036916440242 atom nan grad nan stress nan time 43.76380729675293
+ValLoss Epoch 242 total 8.207244846969843 out 0.12249618897601201 atom nan grad nan stress nan 
+TrainLoss Epoch 243 total 11.750382717698812 out 0.021922355268094593 atom nan grad nan stress nan time 43.60534739494324
+ValLoss Epoch 243 total 8.241279631853104 out 0.1230041707959714 atom nan grad nan stress nan 
+TrainLoss Epoch 244 total 12.30697325244546 out 0.02296077036398688 atom nan grad nan stress nan time 43.4045844078064
+ValLoss Epoch 244 total 8.328281987458467 out 0.1243027126929441 atom nan grad nan stress nan 
+TrainLoss Epoch 245 total 12.22662608511746 out 0.022810868914561706 atom nan grad nan stress nan time 43.69853591918945
+ValLoss Epoch 245 total 8.243980094790459 out 0.12304447639830937 atom nan grad nan stress nan 
+TrainLoss Epoch 246 total 11.968010075390339 out 0.022328376368845253 atom nan grad nan stress nan time 43.578412771224976
+ValLoss Epoch 246 total 8.170765701681376 out 0.12195172471483158 atom nan grad nan stress nan 
+TrainLoss Epoch 247 total 11.995900643058121 out 0.022380411180097665 atom nan grad nan stress nan time 43.4196298122406
+ValLoss Epoch 247 total 8.298810299485922 out 0.12386283812060403 atom nan grad nan stress nan 
+TrainLoss Epoch 248 total 12.173495843075216 out 0.02271174542833394 atom nan grad nan stress nan time 43.3792290687561
+ValLoss Epoch 248 total 8.398268666118383 out 0.12534728860652875 atom nan grad nan stress nan 
+TrainLoss Epoch 249 total 12.386460890993476 out 0.023109068231426017 atom nan grad nan stress nan time 44.02958297729492
+ValLoss Epoch 249 total 8.381441473960876 out 0.1250961376240284 atom nan grad nan stress nan 
+TrainLoss Epoch 250 total 12.064411086961627 out 0.022508229056699452 atom nan grad nan stress nan time 43.74939823150635
+ValLoss Epoch 250 total 8.406553201377392 out 0.1254709393317369 atom nan grad nan stress nan 
+TrainLoss Epoch 251 total 11.800054418854415 out 0.022015026439470745 atom nan grad nan stress nan time 43.563087940216064
+ValLoss Epoch 251 total 8.289962328970432 out 0.12373077704263351 atom nan grad nan stress nan 
+TrainLoss Epoch 252 total 11.753141207620502 out 0.021927501718765587 atom nan grad nan stress nan time 43.74071002006531
+ValLoss Epoch 252 total 8.188444819301367 out 0.1222155918178705 atom nan grad nan stress nan 
+TrainLoss Epoch 253 total 11.851938444189727 out 0.022111824878478875 atom nan grad nan stress nan time 43.56897759437561
+ValLoss Epoch 253 total 8.32133238390088 out 0.124198987252487 atom nan grad nan stress nan 
+TrainLoss Epoch 254 total 11.677413328550756 out 0.02178621826520629 atom nan grad nan stress nan time 43.62603497505188
+ValLoss Epoch 254 total 8.25621061399579 out 0.12322702137139474 atom nan grad nan stress nan 
+TrainLoss Epoch 255 total 11.69912514090538 out 0.021826725421207394 atom nan grad nan stress nan time 43.53837037086487
+ValLoss Epoch 255 total 8.387198243290186 out 0.12518206080588407 atom nan grad nan stress nan 
+TrainLoss Epoch 256 total 11.5738012380898 out 0.021592912200241534 atom nan grad nan stress nan time 43.435707330703735
+ValLoss Epoch 256 total 8.316502969712019 out 0.12412690570439644 atom nan grad nan stress nan 
+TrainLoss Epoch 257 total 11.784895669668913 out 0.0219867451016927 atom nan grad nan stress nan time 43.500715494155884
+ValLoss Epoch 257 total 8.288267131894827 out 0.12370547703156289 atom nan grad nan stress nan 
+TrainLoss Epoch 258 total 11.61079138983041 out 0.021661923755107473 atom nan grad nan stress nan time 43.463541746139526
+ValLoss Epoch 258 total 8.315457798540592 out 0.12411130590993454 atom nan grad nan stress nan 
+TrainLoss Epoch 259 total 11.57946227490902 out 0.021603473788225004 atom nan grad nan stress nan time 43.451250314712524
+ValLoss Epoch 259 total 8.272484138607979 out 0.12346990848138309 atom nan grad nan stress nan 
+TrainLoss Epoch 260 total 11.587181935086846 out 0.021617876232370933 atom nan grad nan stress nan time 43.679691791534424
+ValLoss Epoch 260 total 8.291932988911867 out 0.12376019000652654 atom nan grad nan stress nan 
+TrainLoss Epoch 261 total 11.408646076917648 out 0.021284786871880824 atom nan grad nan stress nan time 43.42744588851929
+ValLoss Epoch 261 total 8.298156909644604 out 0.12385308562435578 atom nan grad nan stress nan 
+TrainLoss Epoch 262 total 11.515900995582342 out 0.021484889394257235 atom nan grad nan stress nan time 43.464295625686646
+ValLoss Epoch 262 total 8.116781022399664 out 0.12114598257135525 atom nan grad nan stress nan 
+TrainLoss Epoch 263 total 11.419169425033033 out 0.0213044199246532 atom nan grad nan stress nan time 43.423402309417725
+ValLoss Epoch 263 total 8.14169280976057 out 0.12151779909997194 atom nan grad nan stress nan 
+TrainLoss Epoch 264 total 11.575221605598927 out 0.021595562130729308 atom nan grad nan stress nan time 43.42438292503357
+ValLoss Epoch 264 total 8.17748561874032 out 0.1220520200916256 atom nan grad nan stress nan 
+TrainLoss Epoch 265 total 11.493011850863695 out 0.02144218573401798 atom nan grad nan stress nan time 43.41818022727966
+ValLoss Epoch 265 total 8.394677814096212 out 0.12529369556791348 atom nan grad nan stress nan 
+TrainLoss Epoch 266 total 11.898096869699657 out 0.02219794138755415 atom nan grad nan stress nan time 43.47335338592529
+ValLoss Epoch 266 total 8.215443577617407 out 0.12261855977167883 atom nan grad nan stress nan 
+TrainLoss Epoch 267 total 11.53812621254474 out 0.021526354374894936 atom nan grad nan stress nan time 43.40947222709656
+ValLoss Epoch 267 total 8.24229335039854 out 0.12301930045121867 atom nan grad nan stress nan 
+TrainLoss Epoch 268 total 11.368038495071232 out 0.021209026451875026 atom nan grad nan stress nan time 43.44542646408081
+ValLoss Epoch 268 total 8.23299928382039 out 0.12288058382035703 atom nan grad nan stress nan 
+TrainLoss Epoch 269 total 11.311569609679282 out 0.021103674166065067 atom nan grad nan stress nan time 43.487836837768555
+ValLoss Epoch 269 total 8.201153874397278 out 0.12240527743119314 atom nan grad nan stress nan 
+TrainLoss Epoch 270 total 11.634138516150415 out 0.021705481738500496 atom nan grad nan stress nan time 43.85437893867493
+ValLoss Epoch 270 total 8.217847783118486 out 0.12265444182502781 atom nan grad nan stress nan 
+TrainLoss Epoch 271 total 11.58268651086837 out 0.021609489187204536 atom nan grad nan stress nan time 43.55560660362244
+ValLoss Epoch 271 total 8.252865079790354 out 0.12317708705229918 atom nan grad nan stress nan 
+TrainLoss Epoch 272 total 11.203953702934086 out 0.020902898163159024 atom nan grad nan stress nan time 43.55735158920288
+ValLoss Epoch 272 total 8.340170450508595 out 0.12448015136894043 atom nan grad nan stress nan 
+TrainLoss Epoch 273 total 11.614110330119729 out 0.021668115699478935 atom nan grad nan stress nan time 43.393070936203
+ValLoss Epoch 273 total 8.453937735408545 out 0.12617817223596578 atom nan grad nan stress nan 
+TrainLoss Epoch 274 total 11.540923232212663 out 0.021531572674027534 atom nan grad nan stress nan time 43.484474658966064
+ValLoss Epoch 274 total 8.25120448321104 out 0.1231523019252666 atom nan grad nan stress nan 
+TrainLoss Epoch 275 total 11.42574658896774 out 0.02131669088602167 atom nan grad nan stress nan time 43.50373148918152
+ValLoss Epoch 275 total 8.365378573536873 out 0.12485639486278775 atom nan grad nan stress nan 
+TrainLoss Epoch 276 total 11.489408425055444 out 0.021435463001881986 atom nan grad nan stress nan time 43.44068241119385
+ValLoss Epoch 276 total 8.194758221507072 out 0.12230982218098363 atom nan grad nan stress nan 
+TrainLoss Epoch 277 total 10.842624424025416 out 0.02022877635310417 atom nan grad nan stress nan time 43.49501848220825
+ValLoss Epoch 277 total 8.289851795881987 out 0.1237291284734155 atom nan grad nan stress nan 
+TrainLoss Epoch 278 total 11.154341101646423 out 0.02081033739598225 atom nan grad nan stress nan time 43.34444785118103
+ValLoss Epoch 278 total 8.369406096637249 out 0.12491650577868944 atom nan grad nan stress nan 
+TrainLoss Epoch 279 total 11.104935139417648 out 0.020718162059607612 atom nan grad nan stress nan time 43.442445516586304
+ValLoss Epoch 279 total 8.381812516599894 out 0.12510167461678787 atom nan grad nan stress nan 
+TrainLoss Epoch 280 total 10.911135103553534 out 0.02035659481339046 atom nan grad nan stress nan time 43.439332723617554
+ValLoss Epoch 280 total 8.444221839308739 out 0.12603315834596437 atom nan grad nan stress nan 
+TrainLoss Epoch 281 total 11.223103234544396 out 0.020938624902570344 atom nan grad nan stress nan time 43.39434504508972
+ValLoss Epoch 281 total 8.2025703266263 out 0.1224264191949018 atom nan grad nan stress nan 
+TrainLoss Epoch 282 total 10.599145234562457 out 0.019774524162342114 atom nan grad nan stress nan time 43.76655077934265
+ValLoss Epoch 282 total 8.103067994117737 out 0.1209413114641521 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 283 total 10.8143753670156 out 0.020176072881303315 atom nan grad nan stress nan time 43.67378616333008
+ValLoss Epoch 283 total 8.32468980923295 out 0.12424909846995602 atom nan grad nan stress nan 
+TrainLoss Epoch 284 total 11.265294234268367 out 0.021017339452000985 atom nan grad nan stress nan time 43.70236420631409
+ValLoss Epoch 284 total 8.216347571462393 out 0.12263205076504588 atom nan grad nan stress nan 
+TrainLoss Epoch 285 total 11.056254394352436 out 0.020627339737801 atom nan grad nan stress nan time 43.68093538284302
+ValLoss Epoch 285 total 8.325465213507414 out 0.12426067192967907 atom nan grad nan stress nan 
+TrainLoss Epoch 286 total 10.680286175571382 out 0.019925906533587064 atom nan grad nan stress nan time 43.84402823448181
+ValLoss Epoch 286 total 8.373666685074568 out 0.12498009708973509 atom nan grad nan stress nan 
+TrainLoss Epoch 287 total 11.0998614737764 out 0.02070869626283719 atom nan grad nan stress nan time 43.70102834701538
+ValLoss Epoch 287 total 8.304683104157448 out 0.12395048989909387 atom nan grad nan stress nan 
+TrainLoss Epoch 288 total 10.852295661345124 out 0.02024681970333526 atom nan grad nan stress nan time 43.50708246231079
+ValLoss Epoch 288 total 8.357716865837574 out 0.124742039406276 atom nan grad nan stress nan 
+TrainLoss Epoch 289 total 11.017366646789014 out 0.020554787988967572 atom nan grad nan stress nan time 43.414713859558105
+ValLoss Epoch 289 total 8.340182673186064 out 0.12448033540917919 atom nan grad nan stress nan 
+TrainLoss Epoch 290 total 10.895141654647887 out 0.020326756340199245 atom nan grad nan stress nan time 43.58189058303833
+ValLoss Epoch 290 total 8.225637532770634 out 0.12277070589970561 atom nan grad nan stress nan 
+TrainLoss Epoch 291 total 10.975784534588456 out 0.02047720946804883 atom nan grad nan stress nan time 43.859861612319946
+ValLoss Epoch 291 total 8.225402671843767 out 0.1227672007302902 atom nan grad nan stress nan 
+TrainLoss Epoch 292 total 10.713028764352202 out 0.019986993455432665 atom nan grad nan stress nan time 43.664170026779175
+ValLoss Epoch 292 total 8.277721289545298 out 0.12354807478730057 atom nan grad nan stress nan 
+TrainLoss Epoch 293 total 10.60108182579279 out 0.01977813725186201 atom nan grad nan stress nan time 43.40924906730652
+ValLoss Epoch 293 total 8.28750517219305 out 0.12369410320653412 atom nan grad nan stress nan 
+TrainLoss Epoch 294 total 10.66059749852866 out 0.019889173963053983 atom nan grad nan stress nan time 43.801748275756836
+ValLoss Epoch 294 total 8.21211053058505 out 0.12256881147683811 atom nan grad nan stress nan 
+TrainLoss Epoch 295 total 10.425612783059478 out 0.01945076968919424 atom nan grad nan stress nan time 43.667956590652466
+ValLoss Epoch 295 total 8.253332685679197 out 0.12318406677386441 atom nan grad nan stress nan 
+TrainLoss Epoch 296 total 10.872837482020259 out 0.020285144012137584 atom nan grad nan stress nan time 43.62775802612305
+ValLoss Epoch 296 total 8.347864210605621 out 0.12459498542140585 atom nan grad nan stress nan 
+TrainLoss Epoch 297 total 10.934851066209376 out 0.020400841008966143 atom nan grad nan stress nan time 43.59251689910889
+ValLoss Epoch 297 total 8.24240205809474 out 0.12302092348989803 atom nan grad nan stress nan 
+TrainLoss Epoch 298 total 10.574963535182178 out 0.019729409122807656 atom nan grad nan stress nan time 43.84925818443298
+ValLoss Epoch 298 total 8.138284225016832 out 0.12146692609380878 atom nan grad nan stress nan 
+TrainLoss Epoch 299 total 10.699535035528243 out 0.019961818643150258 atom nan grad nan stress nan time 43.74389147758484
+ValLoss Epoch 299 total 8.300709776580334 out 0.1238911874722769 atom nan grad nan stress nan 
+TrainLoss Epoch 300 total 10.680770859122276 out 0.019926810799271596 atom nan grad nan stress nan time 43.8847177028656
+ValLoss Epoch 300 total 8.215311724692583 out 0.12261658969109399 atom nan grad nan stress nan 
+TrainLoss Epoch 301 total 10.597876532934606 out 0.01977215720885714 atom nan grad nan stress nan time 43.839592933654785
+ValLoss Epoch 301 total 8.214728806167841 out 0.12260789041846705 atom nan grad nan stress nan 
+TrainLoss Epoch 302 total 10.405720104463398 out 0.01941365636618828 atom nan grad nan stress nan time 43.788257360458374
+ValLoss Epoch 302 total 8.274131074547768 out 0.1234944904973221 atom nan grad nan stress nan 
+TrainLoss Epoch 303 total 10.637502782978117 out 0.01984608676012472 atom nan grad nan stress nan time 43.75143790245056
+ValLoss Epoch 303 total 8.192035634070635 out 0.12226918590702163 atom nan grad nan stress nan 
+TrainLoss Epoch 304 total 10.61652753315866 out 0.01980695385544304 atom nan grad nan stress nan time 43.72385764122009
+ValLoss Epoch 304 total 8.207780662924051 out 0.12250418608325919 atom nan grad nan stress nan 
+TrainLoss Epoch 305 total 10.741849183104932 out 0.020040762876414233 atom nan grad nan stress nan time 43.35122990608215
+ValLoss Epoch 305 total 8.17266557738185 out 0.1219800797645869 atom nan grad nan stress nan 
+TrainLoss Epoch 306 total 11.05343156773597 out 0.020622073313831264 atom nan grad nan stress nan time 43.40511894226074
+ValLoss Epoch 306 total 8.21058900654316 out 0.12254610091321291 atom nan grad nan stress nan 
+TrainLoss Epoch 307 total 10.5101557392627 out 0.019608498999031294 atom nan grad nan stress nan time 43.775553703308105
+ValLoss Epoch 307 total 8.066184688359499 out 0.12039081396407186 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 308 total 10.722803081385791 out 0.020005229148098685 atom nan grad nan stress nan time 43.79948282241821
+ValLoss Epoch 308 total 8.206522766500711 out 0.12248541096569082 atom nan grad nan stress nan 
+TrainLoss Epoch 309 total 10.365617678500712 out 0.01933883843762689 atom nan grad nan stress nan time 43.56454849243164
+ValLoss Epoch 309 total 8.217808071523905 out 0.12265384877668177 atom nan grad nan stress nan 
+TrainLoss Epoch 310 total 10.180444198660553 out 0.018993365581566876 atom nan grad nan stress nan time 43.85913944244385
+ValLoss Epoch 310 total 8.240991905331612 out 0.1229998757021723 atom nan grad nan stress nan 
+TrainLoss Epoch 311 total 10.43789151404053 out 0.0194736777148383 atom nan grad nan stress nan time 43.56829237937927
+ValLoss Epoch 311 total 8.379208233207464 out 0.12506280673772677 atom nan grad nan stress nan 
+TrainLoss Epoch 312 total 10.407439689151943 out 0.01941686463333407 atom nan grad nan stress nan time 44.139190912246704
+ValLoss Epoch 312 total 8.14722790196538 out 0.12160041120519682 atom nan grad nan stress nan 
+TrainLoss Epoch 313 total 10.220755381509662 out 0.01906857298478938 atom nan grad nan stress nan time 43.599095582962036
+ValLoss Epoch 313 total 8.130444288253784 out 0.121349912272333 atom nan grad nan stress nan 
+TrainLoss Epoch 314 total 10.458542224019766 out 0.019512205141105556 atom nan grad nan stress nan time 43.507110595703125
+ValLoss Epoch 314 total 8.12656794115901 out 0.12129205515754343 atom nan grad nan stress nan 
+TrainLoss Epoch 315 total 10.414639359340072 out 0.019430296875190683 atom nan grad nan stress nan time 43.63382053375244
+ValLoss Epoch 315 total 8.109252817928791 out 0.12103362124277046 atom nan grad nan stress nan 
+TrainLoss Epoch 316 total 10.460852229967713 out 0.019516514887100735 atom nan grad nan stress nan time 43.51375126838684
+ValLoss Epoch 316 total 8.165502104908228 out 0.12187316375032559 atom nan grad nan stress nan 
+TrainLoss Epoch 317 total 10.321751936338842 out 0.019256999392093133 atom nan grad nan stress nan time 43.4678316116333
+ValLoss Epoch 317 total 8.13877623155713 out 0.12147426934846882 atom nan grad nan stress nan 
+TrainLoss Epoch 318 total 10.359073558822274 out 0.01932662927936048 atom nan grad nan stress nan time 43.56513023376465
+ValLoss Epoch 318 total 8.207527585327625 out 0.12250040809962644 atom nan grad nan stress nan 
+TrainLoss Epoch 319 total 10.56788751296699 out 0.019716207510081372 atom nan grad nan stress nan time 43.527530670166016
+ValLoss Epoch 319 total 8.255467884242535 out 0.12321593601608553 atom nan grad nan stress nan 
+TrainLoss Epoch 320 total 10.380218068137765 out 0.01936607801181033 atom nan grad nan stress nan time 43.518715143203735
+ValLoss Epoch 320 total 8.342001926153898 out 0.12450748812768608 atom nan grad nan stress nan 
+TrainLoss Epoch 321 total 10.469828243367374 out 0.0195332610931539 atom nan grad nan stress nan time 43.5099561214447
+ValLoss Epoch 321 total 8.176118575036526 out 0.12203161598570024 atom nan grad nan stress nan 
+TrainLoss Epoch 322 total 10.19175427313894 out 0.019014466413052433 atom nan grad nan stress nan time 43.85376238822937
+ValLoss Epoch 322 total 8.15388933941722 out 0.12169983719057549 atom nan grad nan stress nan 
+TrainLoss Epoch 323 total 10.201990718953311 out 0.019033564316114176 atom nan grad nan stress nan time 43.48225665092468
+ValLoss Epoch 323 total 8.1766946464777 out 0.12204021591142447 atom nan grad nan stress nan 
+TrainLoss Epoch 324 total 10.322732140310109 out 0.019258828152277113 atom nan grad nan stress nan time 43.48929738998413
+ValLoss Epoch 324 total 8.068340998142958 out 0.12042299787361917 atom nan grad nan stress nan 
+TrainLoss Epoch 325 total 9.928590501658618 out 0.018523489223912594 atom nan grad nan stress nan time 43.829153537750244
+ValLoss Epoch 325 total 8.089713498950005 out 0.12074198972757226 atom nan grad nan stress nan 
+TrainLoss Epoch 326 total 10.104433269239962 out 0.018851554145721847 atom nan grad nan stress nan time 43.6528058052063
+ValLoss Epoch 326 total 8.12192053347826 out 0.12122269233918138 atom nan grad nan stress nan 
+TrainLoss Epoch 327 total 10.174102379009128 out 0.01898153386954904 atom nan grad nan stress nan time 43.74347543716431
+ValLoss Epoch 327 total 8.227330449968576 out 0.12279597420474667 atom nan grad nan stress nan 
+TrainLoss Epoch 328 total 9.818086587823927 out 0.018317325271789996 atom nan grad nan stress nan time 43.56231641769409
+ValLoss Epoch 328 total 8.121677562594414 out 0.12121906387420338 atom nan grad nan stress nan 
+TrainLoss Epoch 329 total 10.111470226198435 out 0.018864682770881228 atom nan grad nan stress nan time 43.633334159851074
+ValLoss Epoch 329 total 8.181452695280313 out 0.12211123241092058 atom nan grad nan stress nan 
+TrainLoss Epoch 330 total 9.986812226474285 out 0.01863211191109662 atom nan grad nan stress nan time 43.62389516830444
+ValLoss Epoch 330 total 8.138703916221857 out 0.12147318814414527 atom nan grad nan stress nan 
+TrainLoss Epoch 331 total 10.207567824982107 out 0.01904396937030125 atom nan grad nan stress nan time 43.5668888092041
+ValLoss Epoch 331 total 8.238402180373669 out 0.12296122488692032 atom nan grad nan stress nan 
+TrainLoss Epoch 332 total 10.281995138153434 out 0.01918282622368713 atom nan grad nan stress nan time 43.40411138534546
+ValLoss Epoch 332 total 8.243821486830711 out 0.12304210842810877 atom nan grad nan stress nan 
+TrainLoss Epoch 333 total 10.088547523133457 out 0.018821916509525364 atom nan grad nan stress nan time 43.74083590507507
+ValLoss Epoch 333 total 8.202667094767094 out 0.12242786421325329 atom nan grad nan stress nan 
+TrainLoss Epoch 334 total 10.076891741715372 out 0.018800170683773477 atom nan grad nan stress nan time 43.58295965194702
+ValLoss Epoch 334 total 8.162635777145624 out 0.12183038169581624 atom nan grad nan stress nan 
+TrainLoss Epoch 335 total 9.935752022080123 out 0.018536850316417677 atom nan grad nan stress nan time 43.37386965751648
+ValLoss Epoch 335 total 8.333122409880161 out 0.12437495793080974 atom nan grad nan stress nan 
+TrainLoss Epoch 336 total 9.868332382291555 out 0.018411067385762758 atom nan grad nan stress nan time 43.64092302322388
+ValLoss Epoch 336 total 8.194184437394142 out 0.1223012566689746 atom nan grad nan stress nan 
+TrainLoss Epoch 337 total 10.067479457706213 out 0.018782610429315717 atom nan grad nan stress nan time 43.803877115249634
+ValLoss Epoch 337 total 8.245387494564056 out 0.12306548179536016 atom nan grad nan stress nan 
+TrainLoss Epoch 338 total 10.228734194301069 out 0.019083458900064045 atom nan grad nan stress nan time 43.605690002441406
+ValLoss Epoch 338 total 8.081612713634968 out 0.12062108170712711 atom nan grad nan stress nan 
+TrainLoss Epoch 339 total 9.972982108592987 out 0.01860630942257113 atom nan grad nan stress nan time 43.770652055740356
+ValLoss Epoch 339 total 8.131688069552183 out 0.12136847600254162 atom nan grad nan stress nan 
+TrainLoss Epoch 340 total 9.831475495360792 out 0.01834230457495365 atom nan grad nan stress nan time 43.819884300231934
+ValLoss Epoch 340 total 8.192496672272682 out 0.12227606605764889 atom nan grad nan stress nan 
+TrainLoss Epoch 341 total 9.850581537000835 out 0.01837795017140279 atom nan grad nan stress nan time 43.67241358757019
+ValLoss Epoch 341 total 8.287950061261654 out 0.12370074528056206 atom nan grad nan stress nan 
+TrainLoss Epoch 342 total 9.927725219167769 out 0.018521874930943674 atom nan grad nan stress nan time 43.575377225875854
+ValLoss Epoch 342 total 8.240887802094221 out 0.1229983208487481 atom nan grad nan stress nan 
+TrainLoss Epoch 343 total 9.67926779575646 out 0.018058334961775807 atom nan grad nan stress nan time 43.66846585273743
+ValLoss Epoch 343 total 8.239019446074963 out 0.12297043694784789 atom nan grad nan stress nan 
+TrainLoss Epoch 344 total 10.007105297408998 out 0.018669972112004385 atom nan grad nan stress nan time 43.5221951007843
+ValLoss Epoch 344 total 8.135777547955513 out 0.12142951211686842 atom nan grad nan stress nan 
+TrainLoss Epoch 345 total 9.838217191398144 out 0.018354882313665187 atom nan grad nan stress nan time 43.662816762924194
+ValLoss Epoch 345 total 8.234916284680367 out 0.12290919487101558 atom nan grad nan stress nan 
+TrainLoss Epoch 346 total 9.939562722109258 out 0.01854395983671769 atom nan grad nan stress nan time 43.76135540008545
+ValLoss Epoch 346 total 8.089278280735016 out 0.12073549190944445 atom nan grad nan stress nan 
+TrainLoss Epoch 347 total 9.847063656896353 out 0.018371386907895693 atom nan grad nan stress nan time 43.89045739173889
+ValLoss Epoch 347 total 8.153667520731688 out 0.12169652779302392 atom nan grad nan stress nan 
+TrainLoss Epoch 348 total 10.047831204719841 out 0.01874595325261733 atom nan grad nan stress nan time 43.690643310546875
+ValLoss Epoch 348 total 8.25546221807599 out 0.12321585118939514 atom nan grad nan stress nan 
+TrainLoss Epoch 349 total 10.076741474680603 out 0.018799890366004216 atom nan grad nan stress nan time 43.57512283325195
+ValLoss Epoch 349 total 8.220254857093096 out 0.1226903669144867 atom nan grad nan stress nan 
+TrainLoss Epoch 350 total 9.613449286669493 out 0.017935539238050503 atom nan grad nan stress nan time 43.620447397232056
+ValLoss Epoch 350 total 8.299854453653097 out 0.12387842167636078 atom nan grad nan stress nan 
+TrainLoss Epoch 351 total 9.769321550615132 out 0.01822634568947996 atom nan grad nan stress nan time 43.606160402297974
+ValLoss Epoch 351 total 8.187022536993027 out 0.1221943629420746 atom nan grad nan stress nan 
+TrainLoss Epoch 352 total 9.679987416602671 out 0.018059677561000097 atom nan grad nan stress nan time 43.32384014129639
+ValLoss Epoch 352 total 8.202584709972143 out 0.12242663501733024 atom nan grad nan stress nan 
+TrainLoss Epoch 353 total 9.572509599849582 out 0.017859159234705577 atom nan grad nan stress nan time 43.62416481971741
+ValLoss Epoch 353 total 8.195447757840157 out 0.12232011360624133 atom nan grad nan stress nan 
+TrainLoss Epoch 354 total 9.831074678339064 out 0.018341556731714656 atom nan grad nan stress nan time 43.912938594818115
+ValLoss Epoch 354 total 8.19281131029129 out 0.12228076334722332 atom nan grad nan stress nan 
+TrainLoss Epoch 355 total 9.641102841123939 out 0.017987131700760575 atom nan grad nan stress nan time 43.67352914810181
+ValLoss Epoch 355 total 8.184715628623962 out 0.12215993153107381 atom nan grad nan stress nan 
+TrainLoss Epoch 356 total 9.70833887718618 out 0.018112572047026744 atom nan grad nan stress nan time 43.88698053359985
+ValLoss Epoch 356 total 8.24306070432067 out 0.12303075374387172 atom nan grad nan stress nan 
+TrainLoss Epoch 357 total 9.848861895501614 out 0.01837474185458251 atom nan grad nan stress nan time 44.0171594619751
+ValLoss Epoch 357 total 8.189570162445307 out 0.12223238752775573 atom nan grad nan stress nan 
+TrainLoss Epoch 358 total 9.533441727980971 out 0.01778627145529316 atom nan grad nan stress nan time 43.57527422904968
+ValLoss Epoch 358 total 8.182543382048607 out 0.12212751017495228 atom nan grad nan stress nan 
+TrainLoss Epoch 359 total 9.754160941578448 out 0.018198061020436626 atom nan grad nan stress nan time 44.04436182975769
+ValLoss Epoch 359 total 8.204627554863691 out 0.12245712415808853 atom nan grad nan stress nan 
+TrainLoss Epoch 360 total 9.714512043632567 out 0.018124089183621756 atom nan grad nan stress nan time 43.97518491744995
+ValLoss Epoch 360 total 8.225904550403357 out 0.12277469251322683 atom nan grad nan stress nan 
+TrainLoss Epoch 361 total 9.599048159085214 out 0.017908671535608222 atom nan grad nan stress nan time 43.9047064781189
+ValLoss Epoch 361 total 8.157077942043543 out 0.12174742831137109 atom nan grad nan stress nan 
+TrainLoss Epoch 362 total 9.441894568502903 out 0.01761547447307971 atom nan grad nan stress nan time 43.59437394142151
+ValLoss Epoch 362 total 8.222422376275063 out 0.12272271896547299 atom nan grad nan stress nan 
+TrainLoss Epoch 363 total 9.58358891773969 out 0.017879829626116527 atom nan grad nan stress nan time 43.68629479408264
+ValLoss Epoch 363 total 8.227683771401644 out 0.12280124732128875 atom nan grad nan stress nan 
+TrainLoss Epoch 364 total 9.543709637597203 out 0.017805428033445897 atom nan grad nan stress nan time 44.07288336753845
+ValLoss Epoch 364 total 8.114579178392887 out 0.12111312019616001 atom nan grad nan stress nan 
+TrainLoss Epoch 365 total 9.364083510823548 out 0.017470304613815227 atom nan grad nan stress nan time 44.2209575176239
+ValLoss Epoch 365 total 8.256710834801197 out 0.123234487364789 atom nan grad nan stress nan 
+TrainLoss Epoch 366 total 9.644540269859135 out 0.01799354477128452 atom nan grad nan stress nan time 43.962087869644165
+ValLoss Epoch 366 total 8.176731139421463 out 0.1220407603900485 atom nan grad nan stress nan 
+TrainLoss Epoch 367 total 9.577872645109892 out 0.017869164950715433 atom nan grad nan stress nan time 43.779885053634644
+ValLoss Epoch 367 total 8.25391747802496 out 0.12319279482079999 atom nan grad nan stress nan 
+TrainLoss Epoch 368 total 9.53584934771061 out 0.017790763272661516 atom nan grad nan stress nan time 43.81734800338745
+ValLoss Epoch 368 total 8.144578941166401 out 0.12156087500430728 atom nan grad nan stress nan 
+TrainLoss Epoch 369 total 9.662376091815531 out 0.018026820614400405 atom nan grad nan stress nan time 43.66714024543762
+ValLoss Epoch 369 total 8.261848792433739 out 0.12331117262534871 atom nan grad nan stress nan 
+TrainLoss Epoch 370 total 9.408974628895521 out 0.017554056702174713 atom nan grad nan stress nan time 43.46155261993408
+ValLoss Epoch 370 total 8.13681085407734 out 0.12144493554578148 atom nan grad nan stress nan 
+TrainLoss Epoch 371 total 9.265376474708319 out 0.017286149715930253 atom nan grad nan stress nan time 43.716825008392334
+ValLoss Epoch 371 total 8.299372717738152 out 0.12387122955246117 atom nan grad nan stress nan 
+TrainLoss Epoch 372 total 9.54874539654702 out 0.017814823045070288 atom nan grad nan stress nan time 43.935452938079834
+ValLoss Epoch 372 total 8.121919635683298 out 0.1212226783174179 atom nan grad nan stress nan 
+TrainLoss Epoch 373 total 9.394028938375413 out 0.017526172914996117 atom nan grad nan stress nan time 43.33772873878479
+ValLoss Epoch 373 total 8.15583348274231 out 0.12172885517079177 atom nan grad nan stress nan 
+TrainLoss Epoch 374 total 9.388086297549307 out 0.01751508593294927 atom nan grad nan stress nan time 43.489869594573975
+ValLoss Epoch 374 total 8.18078538030386 out 0.1221012713905783 atom nan grad nan stress nan 
+TrainLoss Epoch 375 total 9.813506798818707 out 0.018308780850768678 atom nan grad nan stress nan time 44.00388312339783
+ValLoss Epoch 375 total 8.197154007852077 out 0.12234557865248406 atom nan grad nan stress nan 
+TrainLoss Epoch 376 total 9.423960578627884 out 0.017582015599773005 atom nan grad nan stress nan time 43.4879515171051
+ValLoss Epoch 376 total 8.251219157129526 out 0.12315252107177402 atom nan grad nan stress nan 
+TrainLoss Epoch 377 total 9.68145948741585 out 0.01806242393760048 atom nan grad nan stress nan time 43.8309543132782
+ValLoss Epoch 377 total 8.14300336688757 out 0.12153736149884116 atom nan grad nan stress nan 
+TrainLoss Epoch 378 total 9.493929436430335 out 0.017712554524283147 atom nan grad nan stress nan time 43.34900689125061
+ValLoss Epoch 378 total 8.118912059813738 out 0.12117778851590562 atom nan grad nan stress nan 
+TrainLoss Epoch 379 total 9.490387731231749 out 0.01770594686082175 atom nan grad nan stress nan time 43.4833288192749
+ValLoss Epoch 379 total 8.115590505301952 out 0.12112821337988659 atom nan grad nan stress nan 
+TrainLoss Epoch 380 total 9.450215050950646 out 0.017630997807168588 atom nan grad nan stress nan time 43.46628022193909
+ValLoss Epoch 380 total 8.265709314495325 out 0.12336879202359566 atom nan grad nan stress nan 
+TrainLoss Epoch 381 total 9.36320703662932 out 0.017468669427741605 atom nan grad nan stress nan time 43.8048894405365
+ValLoss Epoch 381 total 8.23741040378809 out 0.12294642137991818 atom nan grad nan stress nan 
+TrainLoss Epoch 382 total 9.294835203327239 out 0.017341110005688654 atom nan grad nan stress nan time 43.49809527397156
+ValLoss Epoch 382 total 8.331826202571392 out 0.12435561115700454 atom nan grad nan stress nan 
+TrainLoss Epoch 383 total 9.174779654480517 out 0.017117125832321334 atom nan grad nan stress nan time 43.50465703010559
+ValLoss Epoch 383 total 8.330440193414688 out 0.12433492594251877 atom nan grad nan stress nan 
+TrainLoss Epoch 384 total 9.323423732072115 out 0.017394446843369243 atom nan grad nan stress nan time 43.94951796531677
+ValLoss Epoch 384 total 8.261140741407871 out 0.12330060538480848 atom nan grad nan stress nan 
+TrainLoss Epoch 385 total 9.399763164110482 out 0.017536871179093593 atom nan grad nan stress nan time 43.81675410270691
+ValLoss Epoch 385 total 8.188959173858166 out 0.12222326703739528 atom nan grad nan stress nan 
+TrainLoss Epoch 386 total 9.287535097450018 out 0.017327490407997123 atom nan grad nan stress nan time 43.67281770706177
+ValLoss Epoch 386 total 8.19748978689313 out 0.12235059166377295 atom nan grad nan stress nan 
+TrainLoss Epoch 387 total 9.240766283124685 out 0.017240235151241044 atom nan grad nan stress nan time 43.49853992462158
+ValLoss Epoch 387 total 8.23297144472599 out 0.12288016830218766 atom nan grad nan stress nan 
+TrainLoss Epoch 388 total 9.09248283598572 out 0.016963586986659968 atom nan grad nan stress nan time 43.64694929122925
+ValLoss Epoch 388 total 8.16974613070488 out 0.12193650581264237 atom nan grad nan stress nan 
+TrainLoss Epoch 389 total 9.38660891726613 out 0.017512329655086104 atom nan grad nan stress nan time 43.61722254753113
+ValLoss Epoch 389 total 8.355071123689413 out 0.12470254945770652 atom nan grad nan stress nan 
+TrainLoss Epoch 390 total 9.41273004654795 out 0.01756106309138356 atom nan grad nan stress nan time 43.86527419090271
+ValLoss Epoch 390 total 8.237895831465721 out 0.12295366549185581 atom nan grad nan stress nan 
+TrainLoss Epoch 391 total 9.303072242066264 out 0.01735647766745011 atom nan grad nan stress nan time 43.15347599983215
+ValLoss Epoch 391 total 8.247117560356855 out 0.12309130370994455 atom nan grad nan stress nan 
+TrainLoss Epoch 392 total 9.152344862930477 out 0.017075269843373618 atom nan grad nan stress nan time 43.49723243713379
+ValLoss Epoch 392 total 8.159389019012451 out 0.12178192277111452 atom nan grad nan stress nan 
+TrainLoss Epoch 393 total 9.197153530083597 out 0.017158868136701293 atom nan grad nan stress nan time 43.792144536972046
+ValLoss Epoch 393 total 8.300135556608438 out 0.12388261658994079 atom nan grad nan stress nan 
+TrainLoss Epoch 394 total 9.104880045168102 out 0.0169867160598145 atom nan grad nan stress nan time 43.66379523277283
+ValLoss Epoch 394 total 8.15437639132142 out 0.121707106942995 atom nan grad nan stress nan 
+TrainLoss Epoch 395 total 9.011921968311071 out 0.016813286810413098 atom nan grad nan stress nan time 43.823004484176636
+ValLoss Epoch 395 total 8.219076532870531 out 0.12267278224807382 atom nan grad nan stress nan 
+TrainLoss Epoch 396 total 9.163743789307773 out 0.01709653648767224 atom nan grad nan stress nan time 43.54562711715698
+ValLoss Epoch 396 total 8.16519719734788 out 0.12186861145899039 atom nan grad nan stress nan 
+TrainLoss Epoch 397 total 9.11781023349613 out 0.017010839583928464 atom nan grad nan stress nan time 43.93108797073364
+ValLoss Epoch 397 total 8.200191624462605 out 0.12239091704255829 atom nan grad nan stress nan 
+TrainLoss Epoch 398 total 9.234493033029139 out 0.017228531292910965 atom nan grad nan stress nan time 43.63276529312134
+ValLoss Epoch 398 total 8.269416768103838 out 0.12342412689055823 atom nan grad nan stress nan 
+TrainLoss Epoch 399 total 9.123649884946644 out 0.017021734448020166 atom nan grad nan stress nan time 43.31363224983215
+ValLoss Epoch 399 total 8.299676682800055 out 0.12387576775535573 atom nan grad nan stress nan 
+TrainLoss Epoch 400 total 9.08258400671184 out 0.016945119040718985 atom nan grad nan stress nan time 44.00366568565369
+ValLoss Epoch 400 total 8.127825446426868 out 0.12131082545213014 atom nan grad nan stress nan 
+TrainLoss Epoch 401 total 9.135778817348182 out 0.01704436311078607 atom nan grad nan stress nan time 43.860941648483276
+ValLoss Epoch 401 total 8.24415161088109 out 0.12304703535739847 atom nan grad nan stress nan 
+TrainLoss Epoch 402 total 9.316228245384991 out 0.017381022386516256 atom nan grad nan stress nan time 43.25197410583496
+ValLoss Epoch 402 total 8.189912360161543 out 0.12223749467179294 atom nan grad nan stress nan 
+TrainLoss Epoch 403 total 9.314546959474683 out 0.017377885616850882 atom nan grad nan stress nan time 43.469587564468384
+ValLoss Epoch 403 total 8.222325026988983 out 0.1227212658643673 atom nan grad nan stress nan 
+TrainLoss Epoch 404 total 9.375949640758336 out 0.017492442921961095 atom nan grad nan stress nan time 43.48240661621094
+ValLoss Epoch 404 total 8.291910611093044 out 0.12375985683139717 atom nan grad nan stress nan 
+TrainLoss Epoch 405 total 9.186419705860317 out 0.017138842329677315 atom nan grad nan stress nan time 43.526708126068115
+ValLoss Epoch 405 total 8.276061926037073 out 0.12352330961363213 atom nan grad nan stress nan 
+TrainLoss Epoch 406 total 8.99505712185055 out 0.01678182248684051 atom nan grad nan stress nan time 43.480947494506836
+ValLoss Epoch 406 total 8.186612196266651 out 0.12218823762526855 atom nan grad nan stress nan 
+TrainLoss Epoch 407 total 9.185403989627957 out 0.017136947335471345 atom nan grad nan stress nan time 43.7364661693573
+ValLoss Epoch 407 total 8.176894709467888 out 0.12204320168853636 atom nan grad nan stress nan 
+TrainLoss Epoch 408 total 9.007759581319988 out 0.016805521144646417 atom nan grad nan stress nan time 43.456939458847046
+ValLoss Epoch 408 total 8.226677637547255 out 0.12278622975480244 atom nan grad nan stress nan 
+TrainLoss Epoch 409 total 9.231439008377492 out 0.017222833592364536 atom nan grad nan stress nan time 43.653417348861694
+ValLoss Epoch 409 total 8.178485006093979 out 0.12206693669199128 atom nan grad nan stress nan 
+TrainLoss Epoch 410 total 9.126577328890562 out 0.01702719612884671 atom nan grad nan stress nan time 43.553382396698
+ValLoss Epoch 410 total 8.13966054841876 out 0.1214874677508748 atom nan grad nan stress nan 
+TrainLoss Epoch 411 total 9.26094984356314 out 0.0172778910903185 atom nan grad nan stress nan time 43.51818299293518
+ValLoss Epoch 411 total 8.202710758894682 out 0.12242851509944737 atom nan grad nan stress nan 
+TrainLoss Epoch 412 total 8.98124829120934 out 0.016756059805360927 atom nan grad nan stress nan time 43.47788906097412
+ValLoss Epoch 412 total 8.11038114130497 out 0.12105046275809057 atom nan grad nan stress nan 
+TrainLoss Epoch 413 total 9.024122311733663 out 0.01683604859084379 atom nan grad nan stress nan time 43.4560489654541
+ValLoss Epoch 413 total 8.235117807984352 out 0.122912202501939 atom nan grad nan stress nan 
+TrainLoss Epoch 414 total 8.9898062646389 out 0.016772026196770422 atom nan grad nan stress nan time 43.50824975967407
+ValLoss Epoch 414 total 8.288908269256353 out 0.12371504701877648 atom nan grad nan stress nan 
+TrainLoss Epoch 415 total 9.111471028998494 out 0.016999012695596106 atom nan grad nan stress nan time 43.551071643829346
+ValLoss Epoch 415 total 8.166536770761013 out 0.12188860418161963 atom nan grad nan stress nan 
+TrainLoss Epoch 416 total 9.040063923224807 out 0.01686579045745269 atom nan grad nan stress nan time 43.52830672264099
+ValLoss Epoch 416 total 8.171149741858244 out 0.12195745578852193 atom nan grad nan stress nan 
+TrainLoss Epoch 417 total 9.191549059003592 out 0.017148412001248597 atom nan grad nan stress nan time 43.5509717464447
+ValLoss Epoch 417 total 8.113064173609018 out 0.1210905063277607 atom nan grad nan stress nan 
+TrainLoss Epoch 418 total 8.823026143945754 out 0.016460869267860122 atom nan grad nan stress nan time 44.00964689254761
+ValLoss Epoch 418 total 8.143683277070522 out 0.12154750821805381 atom nan grad nan stress nan 
+TrainLoss Epoch 419 total 9.183658502064645 out 0.017133690834693512 atom nan grad nan stress nan time 43.54989790916443
+ValLoss Epoch 419 total 8.247658163309097 out 0.12309937364614101 atom nan grad nan stress nan 
+TrainLoss Epoch 420 total 8.874764941632748 out 0.016557396816583476 atom nan grad nan stress nan time 43.4689838886261
+ValLoss Epoch 420 total 8.197057098150253 out 0.12234413256433448 atom nan grad nan stress nan 
+TrainLoss Epoch 421 total 9.109113067388535 out 0.016994613509961953 atom nan grad nan stress nan time 43.4542031288147
+ValLoss Epoch 421 total 8.10794310644269 out 0.12101407296049442 atom nan grad nan stress nan 
+TrainLoss Epoch 422 total 8.905537866055965 out 0.016614809026724492 atom nan grad nan stress nan time 43.48551893234253
+ValLoss Epoch 422 total 8.233359035104513 out 0.12288595135384038 atom nan grad nan stress nan 
+TrainLoss Epoch 423 total 8.710832377895713 out 0.016251552586003477 atom nan grad nan stress nan time 43.485944747924805
+ValLoss Epoch 423 total 8.14056284353137 out 0.12150093451257439 atom nan grad nan stress nan 
+TrainLoss Epoch 424 total 8.890014966018498 out 0.016585848422172367 atom nan grad nan stress nan time 43.40540623664856
+ValLoss Epoch 424 total 8.268826145678759 out 0.12341531198431593 atom nan grad nan stress nan 
+TrainLoss Epoch 425 total 8.915813590399921 out 0.016633980145537217 atom nan grad nan stress nan time 43.47106719017029
+ValLoss Epoch 425 total 8.364824559539557 out 0.12484812583183384 atom nan grad nan stress nan 
+TrainLoss Epoch 426 total 8.953589227050543 out 0.016704457077367788 atom nan grad nan stress nan time 43.520556688308716
+ValLoss Epoch 426 total 8.136873297393322 out 0.12144586690339866 atom nan grad nan stress nan 
+TrainLoss Epoch 427 total 8.86937915161252 out 0.01654734877664992 atom nan grad nan stress nan time 43.81726050376892
+ValLoss Epoch 427 total 8.145780187100172 out 0.1215788043398075 atom nan grad nan stress nan 
+TrainLoss Epoch 428 total 8.685703188180923 out 0.016204669706062824 atom nan grad nan stress nan time 43.36566400527954
+ValLoss Epoch 428 total 8.151649057865143 out 0.12166640189286995 atom nan grad nan stress nan 
+TrainLoss Epoch 429 total 9.04347590636462 out 0.01687215616022168 atom nan grad nan stress nan time 43.924826860427856
+ValLoss Epoch 429 total 8.27508920431137 out 0.12350879089280659 atom nan grad nan stress nan 
+TrainLoss Epoch 430 total 9.020385770127177 out 0.0168290775454225 atom nan grad nan stress nan time 43.42860960960388
+ValLoss Epoch 430 total 8.236150961369276 out 0.12292762238244148 atom nan grad nan stress nan 
+TrainLoss Epoch 431 total 9.00252312514931 out 0.016795751676614613 atom nan grad nan stress nan time 43.815881967544556
+ValLoss Epoch 431 total 8.22897369414568 out 0.122820499348323 atom nan grad nan stress nan 
+TrainLoss Epoch 432 total 8.980197750031948 out 0.01675409980732668 atom nan grad nan stress nan time 43.6049165725708
+ValLoss Epoch 432 total 8.188974350690842 out 0.12222349363337201 atom nan grad nan stress nan 
+TrainLoss Epoch 433 total 8.873587634414434 out 0.016555200426363284 atom nan grad nan stress nan time 43.63455080986023
+ValLoss Epoch 433 total 8.196192637085915 out 0.12233123011252975 atom nan grad nan stress nan 
+TrainLoss Epoch 434 total 8.774168730713427 out 0.01636971734385712 atom nan grad nan stress nan time 43.25304317474365
+ValLoss Epoch 434 total 8.190368089824915 out 0.12224429666522446 atom nan grad nan stress nan 
+TrainLoss Epoch 435 total 8.740637596696615 out 0.01630715921094305 atom nan grad nan stress nan time 43.46239161491394
+ValLoss Epoch 435 total 8.166820466518402 out 0.121892839917924 atom nan grad nan stress nan 
+TrainLoss Epoch 436 total 8.559778883121908 out 0.0159697363397157 atom nan grad nan stress nan time 43.39427828788757
+ValLoss Epoch 436 total 8.25746463611722 out 0.12324573734157551 atom nan grad nan stress nan 
+TrainLoss Epoch 437 total 8.7589769680053 out 0.016341374539733746 atom nan grad nan stress nan time 43.41404914855957
+ValLoss Epoch 437 total 8.199322558939457 out 0.1223779457274657 atom nan grad nan stress nan 
+TrainLoss Epoch 438 total 8.82014144025743 out 0.016455487343999747 atom nan grad nan stress nan time 43.4989058971405
+ValLoss Epoch 438 total 8.216724541038275 out 0.1226376759094637 atom nan grad nan stress nan 
+TrainLoss Epoch 439 total 8.759548170492053 out 0.016342440171864533 atom nan grad nan stress nan time 43.74551796913147
+ValLoss Epoch 439 total 8.336285140365362 out 0.12442216275937125 atom nan grad nan stress nan 
+TrainLoss Epoch 440 total 8.926889503374696 out 0.016654644291890727 atom nan grad nan stress nan time 43.50086832046509
+ValLoss Epoch 440 total 8.231166504323483 out 0.12285322739747799 atom nan grad nan stress nan 
+TrainLoss Epoch 441 total 9.02979673538357 out 0.01684663529004061 atom nan grad nan stress nan time 43.51276779174805
+ValLoss Epoch 441 total 8.239539243280888 out 0.12297819247720365 atom nan grad nan stress nan 
+TrainLoss Epoch 442 total 8.762447565793991 out 0.01634784951578329 atom nan grad nan stress nan time 43.14427161216736
+ValLoss Epoch 442 total 8.197383187711239 out 0.12234899939408668 atom nan grad nan stress nan 
+TrainLoss Epoch 443 total 8.743899198248982 out 0.016313244374463458 atom nan grad nan stress nan time 43.490862131118774
+ValLoss Epoch 443 total 8.222079437226057 out 0.12271759996801376 atom nan grad nan stress nan 
+TrainLoss Epoch 444 total 8.814707891084254 out 0.01644535013843332 atom nan grad nan stress nan time 43.53938126564026
+ValLoss Epoch 444 total 8.253135278820992 out 0.12318112034250359 atom nan grad nan stress nan 
+TrainLoss Epoch 445 total 8.630199772305787 out 0.01610111856775554 atom nan grad nan stress nan time 43.70193099975586
+ValLoss Epoch 445 total 8.195409212261438 out 0.12231953799708577 atom nan grad nan stress nan 
+TrainLoss Epoch 446 total 8.653130180202425 out 0.016143899212561447 atom nan grad nan stress nan time 43.546804666519165
+ValLoss Epoch 446 total 8.200892340391874 out 0.12240137368642438 atom nan grad nan stress nan 
+TrainLoss Epoch 447 total 8.7631497643888 out 0.016349159591256667 atom nan grad nan stress nan time 43.43955135345459
+ValLoss Epoch 447 total 8.189679134637117 out 0.12223401332716613 atom nan grad nan stress nan 
+TrainLoss Epoch 448 total 8.543866766616702 out 0.015940049523960446 atom nan grad nan stress nan time 43.690176010131836
+ValLoss Epoch 448 total 8.190686713904142 out 0.12224905274124076 atom nan grad nan stress nan 
+TrainLoss Epoch 449 total 8.613185898400843 out 0.016069376273746272 atom nan grad nan stress nan time 43.72094416618347
+ValLoss Epoch 449 total 8.142159901559353 out 0.12152477095896577 atom nan grad nan stress nan 
+TrainLoss Epoch 450 total 8.827010530047119 out 0.01646830283488915 atom nan grad nan stress nan time 43.747793436050415
+ValLoss Epoch 450 total 8.188332844525576 out 0.12221392008233803 atom nan grad nan stress nan 
+TrainLoss Epoch 451 total 8.626981166191399 out 0.016095113719326218 atom nan grad nan stress nan time 43.76142859458923
+ValLoss Epoch 451 total 8.254439793527126 out 0.12320058951869371 atom nan grad nan stress nan 
+TrainLoss Epoch 452 total 8.512180510908365 out 0.015880933409628963 atom nan grad nan stress nan time 43.775858640670776
+ValLoss Epoch 452 total 8.337164301425219 out 0.12443528433842113 atom nan grad nan stress nan 
+TrainLoss Epoch 453 total 8.668199847452343 out 0.016172014201590187 atom nan grad nan stress nan time 43.6649489402771
+ValLoss Epoch 453 total 8.271487891674042 out 0.12345503969239775 atom nan grad nan stress nan 
+TrainLoss Epoch 454 total 8.626341942697763 out 0.016093921134056884 atom nan grad nan stress nan time 43.74044680595398
+ValLoss Epoch 454 total 8.219290498644114 out 0.12267597542406557 atom nan grad nan stress nan 
+TrainLoss Epoch 455 total 8.613866213709116 out 0.016070645497342554 atom nan grad nan stress nan time 43.71093130111694
+ValLoss Epoch 455 total 8.15985755994916 out 0.12178891569298053 atom nan grad nan stress nan 
+TrainLoss Epoch 456 total 8.498233481310308 out 0.01585491274963846 atom nan grad nan stress nan time 43.72001266479492
+ValLoss Epoch 456 total 8.231946248561144 out 0.12286486753940472 atom nan grad nan stress nan 
+TrainLoss Epoch 457 total 8.689297153614461 out 0.016211374798606425 atom nan grad nan stress nan time 43.64152646064758
+ValLoss Epoch 457 total 8.127721149474382 out 0.1213092683257554 atom nan grad nan stress nan 
+TrainLoss Epoch 458 total 8.615004518069327 out 0.01607276924312395 atom nan grad nan stress nan time 43.73181986808777
+ValLoss Epoch 458 total 8.178114421665668 out 0.12206140767856233 atom nan grad nan stress nan 
+TrainLoss Epoch 459 total 8.789392050355673 out 0.016398119126230334 atom nan grad nan stress nan time 43.81364059448242
+ValLoss Epoch 459 total 8.23066434264183 out 0.12284573280935893 atom nan grad nan stress nan 
+TrainLoss Epoch 460 total 8.863133425824344 out 0.016535696332749032 atom nan grad nan stress nan time 43.75870943069458
+ValLoss Epoch 460 total 8.147616270929575 out 0.12160620980003779 atom nan grad nan stress nan 
+TrainLoss Epoch 461 total 8.620621155016124 out 0.016083247997879083 atom nan grad nan stress nan time 43.770592212677
+ValLoss Epoch 461 total 8.168948896229267 out 0.1219246071917926 atom nan grad nan stress nan 
+TrainLoss Epoch 462 total 8.436975315213203 out 0.015740625222674946 atom nan grad nan stress nan time 43.39750647544861
+ValLoss Epoch 462 total 8.21336217224598 out 0.12258749113137458 atom nan grad nan stress nan 
+TrainLoss Epoch 463 total 8.580728331580758 out 0.016008821111336724 atom nan grad nan stress nan time 43.46752071380615
+ValLoss Epoch 463 total 8.129768416285515 out 0.1213398243102243 atom nan grad nan stress nan 
+TrainLoss Epoch 464 total 8.460864113643765 out 0.015785193833389395 atom nan grad nan stress nan time 43.55952167510986
+ValLoss Epoch 464 total 8.216432593762875 out 0.12263332005794936 atom nan grad nan stress nan 
+TrainLoss Epoch 465 total 8.411237829364836 out 0.01569260751074414 atom nan grad nan stress nan time 43.42391896247864
+ValLoss Epoch 465 total 8.215988509356976 out 0.12262669175082996 atom nan grad nan stress nan 
+TrainLoss Epoch 466 total 8.345060337334871 out 0.015569142045670576 atom nan grad nan stress nan time 43.514787673950195
+ValLoss Epoch 466 total 8.193313304334879 out 0.122288256004668 atom nan grad nan stress nan 
+TrainLoss Epoch 467 total 8.591248927637935 out 0.01602844913327989 atom nan grad nan stress nan time 43.714778661727905
+ValLoss Epoch 467 total 8.251258064061403 out 0.12315310218164759 atom nan grad nan stress nan 
+TrainLoss Epoch 468 total 8.573397889733315 out 0.015995144909324712 atom nan grad nan stress nan time 43.65607023239136
+ValLoss Epoch 468 total 8.229273315519094 out 0.12282497273508552 atom nan grad nan stress nan 
+TrainLoss Epoch 469 total 8.388578865677118 out 0.015650333312573646 atom nan grad nan stress nan time 43.613831996917725
+ValLoss Epoch 469 total 8.216100953519344 out 0.12262837010518245 atom nan grad nan stress nan 
+TrainLoss Epoch 470 total 8.708083562552929 out 0.016246424055487575 atom nan grad nan stress nan time 43.75078868865967
+ValLoss Epoch 470 total 8.096190795302391 out 0.1208386659217388 atom nan grad nan stress nan 
+TrainLoss Epoch 471 total 8.859549826942384 out 0.016529010458676073 atom nan grad nan stress nan time 43.946943044662476
+ValLoss Epoch 471 total 8.165758170187473 out 0.12187698448261558 atom nan grad nan stress nan 
+TrainLoss Epoch 472 total 8.632591520436108 out 0.01610558084480573 atom nan grad nan stress nan time 43.32176351547241
+ValLoss Epoch 472 total 8.105096660554409 out 0.12097158842098077 atom nan grad nan stress nan 
+TrainLoss Epoch 473 total 8.382876214571297 out 0.015639694010056722 atom nan grad nan stress nan time 43.52402853965759
+ValLoss Epoch 473 total 8.059625513851643 out 0.12029291747464309 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 474 total 8.352815837599337 out 0.015583611210804062 atom nan grad nan stress nan time 43.690746545791626
+ValLoss Epoch 474 total 8.15556950494647 out 0.12172491455355029 atom nan grad nan stress nan 
+TrainLoss Epoch 475 total 8.199570171535015 out 0.0152977051728224 atom nan grad nan stress nan time 43.54986071586609
+ValLoss Epoch 475 total 8.181516487151384 out 0.12211218350379349 atom nan grad nan stress nan 
+TrainLoss Epoch 476 total 8.348541835322976 out 0.015575637382518782 atom nan grad nan stress nan time 43.703845262527466
+ValLoss Epoch 476 total 8.124774422496557 out 0.12126528782920264 atom nan grad nan stress nan 
+TrainLoss Epoch 477 total 8.510565486736596 out 0.015877920279654466 atom nan grad nan stress nan time 43.65487480163574
+ValLoss Epoch 477 total 8.274562064558268 out 0.12350092240818307 atom nan grad nan stress nan 
+TrainLoss Epoch 478 total 8.376394195482135 out 0.01562760069425342 atom nan grad nan stress nan time 43.55516195297241
+ValLoss Epoch 478 total 8.090806026011705 out 0.12075829622531364 atom nan grad nan stress nan 
+TrainLoss Epoch 479 total 8.416346286423504 out 0.01570213815746676 atom nan grad nan stress nan time 43.839285135269165
+ValLoss Epoch 479 total 8.160690810531378 out 0.12180135294975658 atom nan grad nan stress nan 
+TrainLoss Epoch 480 total 8.512271956540644 out 0.01588110400189831 atom nan grad nan stress nan time 43.58072304725647
+ValLoss Epoch 480 total 8.124558202922344 out 0.12126205875422484 atom nan grad nan stress nan 
+TrainLoss Epoch 481 total 8.571449806913733 out 0.015991510434252197 atom nan grad nan stress nan time 44.01853704452515
+ValLoss Epoch 481 total 8.072860773652792 out 0.12049045568623586 atom nan grad nan stress nan 
+TrainLoss Epoch 482 total 8.345356713049114 out 0.015569694961104578 atom nan grad nan stress nan time 43.71074962615967
+ValLoss Epoch 482 total 8.325959797948599 out 0.12426805538266887 atom nan grad nan stress nan 
+TrainLoss Epoch 483 total 8.780907204374671 out 0.016382289227461506 atom nan grad nan stress nan time 43.723982095718384
+ValLoss Epoch 483 total 8.070157315582037 out 0.12045010581618662 atom nan grad nan stress nan 
+TrainLoss Epoch 484 total 8.420964845456183 out 0.015710754941104722 atom nan grad nan stress nan time 43.418455362319946
+ValLoss Epoch 484 total 8.041100028902292 out 0.12001641577708808 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 485 total 8.296041171066463 out 0.015477688352779819 atom nan grad nan stress nan time 43.352325677871704
+ValLoss Epoch 485 total 8.230373926460743 out 0.12284139816829555 atom nan grad nan stress nan 
+TrainLoss Epoch 486 total 8.244412215426564 out 0.01538136571424813 atom nan grad nan stress nan time 43.780996322631836
+ValLoss Epoch 486 total 8.002622462809086 out 0.11944212356666982 atom nan grad nan stress nan Saving model
+TrainLoss Epoch 487 total 8.293108682148159 out 0.015472217369599611 atom nan grad nan stress nan time 43.964234828948975
+ValLoss Epoch 487 total 8.12643514573574 out 0.12129007327361854 atom nan grad nan stress nan 
+TrainLoss Epoch 488 total 8.23623277619481 out 0.015366105481773163 atom nan grad nan stress nan time 43.86978888511658
+ValLoss Epoch 488 total 8.073772579431534 out 0.12050406456868457 atom nan grad nan stress nan 
+TrainLoss Epoch 489 total 8.193107448518276 out 0.015285647869319324 atom nan grad nan stress nan time 43.790796518325806
+ValLoss Epoch 489 total 8.115917429327965 out 0.12113309279058276 atom nan grad nan stress nan 
+TrainLoss Epoch 490 total 8.298882863484323 out 0.015482990093643982 atom nan grad nan stress nan time 43.333187103271484
+ValLoss Epoch 490 total 8.093375373631716 out 0.12079664501019229 atom nan grad nan stress nan 
+TrainLoss Epoch 491 total 8.293169807642698 out 0.015472331348695231 atom nan grad nan stress nan time 43.96738004684448
+ValLoss Epoch 491 total 8.14268520846963 out 0.12153261135027675 atom nan grad nan stress nan 
+TrainLoss Epoch 492 total 8.415863616392016 out 0.015701237649596165 atom nan grad nan stress nan time 43.416295289993286
+ValLoss Epoch 492 total 8.187660701572895 out 0.12220388798354422 atom nan grad nan stress nan 
+TrainLoss Epoch 493 total 8.333124727010727 out 0.015546874078145215 atom nan grad nan stress nan time 43.843122720718384
+ValLoss Epoch 493 total 8.071333214640617 out 0.12046765781108454 atom nan grad nan stress nan 
+TrainLoss Epoch 494 total 8.067623800598085 out 0.015051536553673887 atom nan grad nan stress nan time 43.76718997955322
+ValLoss Epoch 494 total 8.168845996260643 out 0.12192307120267214 atom nan grad nan stress nan 
+TrainLoss Epoch 495 total 8.136017733253539 out 0.015179137166731409 atom nan grad nan stress nan time 43.415273666381836
+ValLoss Epoch 495 total 8.026277795433998 out 0.11979518825279052 atom nan grad nan stress nan 
+TrainLoss Epoch 496 total 8.083229667507112 out 0.015080652031020127 atom nan grad nan stress nan time 43.55289649963379
+ValLoss Epoch 496 total 8.10803160071373 out 0.12101539318852941 atom nan grad nan stress nan 
+TrainLoss Epoch 497 total 8.099715075455606 out 0.015111408304693767 atom nan grad nan stress nan time 43.44626212120056
+ValLoss Epoch 497 total 8.041043799370527 out 0.12001557579622973 atom nan grad nan stress nan 
+TrainLoss Epoch 498 total 8.372808600775898 out 0.01562091117264315 atom nan grad nan stress nan time 43.33628582954407
+ValLoss Epoch 498 total 8.189085382968187 out 0.12222515101523694 atom nan grad nan stress nan 
+TrainLoss Epoch 499 total 8.429838862270117 out 0.015727310922019316 atom nan grad nan stress nan time 44.119662284851074
+ValLoss Epoch 499 total 8.155421499162912 out 0.1217227058582073 atom nan grad nan stress nan 
+TestLoss 499 28.97430420294404
+Time taken (s) 23175.486912965775
