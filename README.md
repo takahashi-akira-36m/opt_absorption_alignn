@@ -13,7 +13,8 @@ from High-Dimensional Data: A Case of Optical Spectra of Inorganic Crystals**".
 
 If you use this data or scripts in your research, please cite our preprint and the relevant references therein:
 
-arxiv.XXXXX
+[Akira Takahashi, Yu Kumagai, Arata Takamatsu, Fumiyasu Oba arxiv [cond-mat.mtrl-sci] 2510.17123](https://arxiv.org/abs/2510.17123)
+
 
 Please also cite the appropriate references mentioned in our paper.
 
